@@ -1,14 +1,14 @@
-var gulp        = require('gulp'),
-    gutil       = require('gulp-util'),
-    sass        = require('gulp-sass'),
-    jade        = require('gulp-jade'),
-    concat      = require('gulp-concat'),
-    livereload  = require('gulp-livereload'), // Livereload plugin needed: https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei
-    tinylr      = require('tiny-lr'),
-    express     = require('express'),
-    app         = express(),
-    path        = require('path'),
-    server      = tinylr();
+var gulp = require('gulp'),
+  gutil = require('gulp-util'),
+  sass = require('gulp-sass'),
+  jade = require('gulp-jade'),
+  concat = require('gulp-concat'),
+  livereload = require('gulp-livereload'), // Livereload plugin needed: https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei
+  tinylr = require('tiny-lr'),
+  express = require('express'),
+  app = express(),
+  path = require('path'),
+  server = tinylr();
 
 
 // --- Basic Tasks ---
@@ -19,14 +19,12 @@ gulp.task('css', function() {
         includePaths: ['src/css'],
         errLogToConsole: true
       } ) )
-    .pipe( csso() )
     .pipe( gulp.dest('public/css/') )
     .pipe( livereload( server ));
 });
 
 gulp.task('js', function() {
   return gulp.src('src/js/*.js')
-    .pipe( uglify() )
     .pipe( concat('all.min.js'))
     .pipe( gulp.dest('public/js/'))
     .pipe( livereload( server ));
