@@ -1,1 +1,1 @@
-# laa-ccms-proto
+# LAA CCMS Frontend Prototype

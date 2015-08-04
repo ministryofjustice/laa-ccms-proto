@@ -1,0 +1,31 @@
+{
+  "name": "laa-ccms-proto",
+  "version": "1.0.0",
+  "description": "laa ccms prototype",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Demwunz/laa-ccms-proto.git"
+  },
+  "author": "MOJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Demwunz/laa-ccms-proto/issues"
+  },
+  "homepage": "https://github.com/Demwunz/laa-ccms-proto#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "govuk_frontend_toolkit": "^4.1.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-util": "^3.0.6",
+    "path": "^0.11.14",
+    "tiny-lr": "^0.1.6"
+  }
+}
