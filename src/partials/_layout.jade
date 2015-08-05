@@ -1,0 +1,21 @@
+doctype html
+html(lang='en-US', dir='ltr')
+  head
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    block title
+      title LAA CCMS prototype
+    include ./_legacycss.jade
+      //- link(rel='stylesheet', type='text/css', href='/web-determinations/635742668236806070/resource/Check+Box+xml/en-US/__customStyles_6f2560a7-2afe-41b9-867b-26dcf159436d.css')
+    include ./_legacyjs.jade  
+  body(role='application')
+    script(type='text/javascript').
+      if (window.self !== window.top) {
+      jQuery("body").addClass("opm-frame");
+      }
+      jQuery("body").addClass("owd-has-js");
+    block content
+      h1 LAA CCMS prototype
+    include ./_pagejs.jade
+    //- script(src='/web-determinations/staticresource/Custom.js', type='text/javascript')

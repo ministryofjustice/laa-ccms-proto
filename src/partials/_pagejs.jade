@@ -1,0 +1,184 @@
+script(type='text/javascript').
+  var fadeAnimation = {
+  fadeInDuration: 0,
+  fadeOutDuration: 0
+  };
+script(src='/web-determinations/staticresource/js-global-utilities.js', type='text/javascript')
+script(type='text/javascript').
+  var explanationParams = {
+  captionCollapseImage: "/web-determinations/staticresource/images/bullet_down.gif",
+  captionExpandImage: "/web-determinations/staticresource/images/bullet_right.gif",
+  nodeExpandImage: "/web-determinations/staticresource/images/ei-expand.gif",
+  nodeExpandAlt: "Click to expand node",
+  nodeCollapseImage:  "/web-determinations/staticresource/images/ei-collapse.gif",
+  nodeCollapseAlt: "Click to collapse node"
+  };
+  var searchingComboboxes = {
+  maxResults: 20,
+  moreResultsText: "...",
+  triggerTooltip: "Show all items"
+  };
+  var datePickerOpts = {
+  buttonImageOnly: "true",
+  dateFormat: "d/m/y",
+  showOn: "both",
+  buttonText:  "Click to open calendar",
+  buttonImage: "/web-determinations/staticresource/images/calendar.png",
+  dayNames: [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+  ],
+  dayNamesShort: [
+  "Sun",
+  "Mon",
+  "Tues",
+  "Wed",
+  "Thurs",
+  "Fri",
+  "Sat"
+  ],
+  dayNamesMin: [
+  "S",
+  "M",
+  "T",
+  "W",
+  "T",
+  "F",
+  "S"
+  ],
+  monthNames: [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+  ],
+  monthNamesShort: [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec"
+  ]
+  };
+  var screenInfo = {
+  backButtonCaption: "Back",
+  backButtonURL: "",
+  controls: [],
+  controlsByName: {},
+  controlsByType: function(controlType){
+  var matches = [];
+  for(var i = 0; i < screenInfo.controls.length; ++i ){
+  if(screenInfo.controls[i].type === controlType)
+  matches.push(screenInfo.controls[i]);
+  }
+  return matches;
+  },
+  hintTextControls: function(){
+  var matches = [];
+  for(var i = 0; i < screenInfo.controls.length; ++i ){
+  if(screenInfo.controls[i].hintText !== undefined)
+  matches.push(screenInfo.controls[i]);
+  }
+  }
+  };
+  var ctrlInfo = {
+  inputType: "checkbox",
+  displayValue: "Yes",
+  hasHintText: "false".toLowerCase() == "true",
+  parentCtrlId: "qs%24818041aa-c1cc-4112-a3e7-491f78481980%24global%24global",
+  name: "global_global_a_CHECKBOX_ONE",
+  id: "global_global_a_CHECKBOX_ONE",
+  type: "BooleanInputControl",
+  state: "enabled"
+  };
+  screenInfo.controls.push(ctrlInfo);
+  screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+  var ctrlInfo = {
+  inputType: "checkbox",
+  displayValue: "Yes",
+  hasHintText: "false".toLowerCase() == "true",
+  parentCtrlId: "qs%24818041aa-c1cc-4112-a3e7-491f78481980%24global%24global",
+  name: "global_global_a_CHECKBOX_TWO",
+  id: "global_global_a_CHECKBOX_TWO",
+  type: "BooleanInputControl",
+  state: "enabled"
+  };
+  screenInfo.controls.push(ctrlInfo);
+  screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+  var ctrlInfo = {
+  inputType: "checkbox",
+  displayValue: "Yes",
+  hasHintText: "false".toLowerCase() == "true",
+  parentCtrlId: "qs%24818041aa-c1cc-4112-a3e7-491f78481980%24global%24global",
+  name: "global_global_a_CHECKBOX_THREE",
+  id: "global_global_a_CHECKBOX_THREE",
+  type: "BooleanInputControl",
+  state: "enabled"
+  };
+  screenInfo.controls.push(ctrlInfo);
+  screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+  var ctrlInfo = {
+  parentCtrlId: "qs%24818041aa-c1cc-4112-a3e7-491f78481980%24global%24global",
+  name: "form-buttons",
+  id: "form-buttons",
+  type: "ButtonGroup",
+  state: "enabled"
+  };
+  screenInfo.controls.push(ctrlInfo);
+  screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+  var ctrlInfo = {
+  parentCtrlId: "qs%24818041aa-c1cc-4112-a3e7-491f78481980%24global%24global",
+  name: "submit",
+  id: "submit",
+  type: "ButtonControl",
+  state: "enabled"
+  };
+  screenInfo.controls.push(ctrlInfo);
+  screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+  var unsubmittedDataWarning = {
+  isEnabled: "false".toLowerCase() === "true",
+  hasUnsubmitted: "false".toLowerCase() === "true",
+  warningMsg: "This screen may have data that has not been submitted."
+  };
+  var stageData = {
+  stages: [
+  ],
+  screens: [
+  { "url" : "/web-determinations/635742668236806070/investigate/Check+Box+xml/en-US/ScreenOrder~Main~qs%24818041aa-c1cc-4112-a3e7-491f78481980%24global%24global/qs%24818041aa-c1cc-4112-a3e7-491f78481980%24global%24global", "text":"Checkbox xml", "kind":"active-screen" }
+  ,
+  { "url" : "/web-determinations/635742668236806070/investigate/Check+Box+xml/en-US/ScreenOrder~Main~qs%24c22fc6ad-2390-4c5d-b8f7-7ddfe65adb5c%24global%24global/qs%24c22fc6ad-2390-4c5d-b8f7-7ddfe65adb5c%24global%24global", "text":"Interview Complete", "kind":"other-screen" }
+  ]
+  };
+  var dataFormats = {
+  "bool": {
+  "trueVal": "Yes",
+  "falseVal": "No",
+  "uncertainVal": "Uncertain",
+  "unknownVal": "Unknown"
+  }
+  };
+  var dynamicControlStateEnabled = true;
+  var controlRules = [
+  ];
+script(src='/web-determinations/staticresource/OPAControlStateEvaluator.js', type='text/javascript')
+script(src='/web-determinations/staticresource/interview-screen-utilities.js', type='text/javascript')
