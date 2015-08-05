@@ -25,7 +25,7 @@ gulp.task('css', function () {
 
 gulp.task('js', function () {
   return gulp.src('src/js/*.js')
-    .pipe(concat('all.min.js'))
+    .pipe(concat('laa-ccms.min.js'))
     .pipe(gulp.dest('public/js/'))
     .pipe(livereload(server));
 });
