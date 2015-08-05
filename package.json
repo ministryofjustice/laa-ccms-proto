@@ -17,14 +17,17 @@
   },
   "homepage": "https://github.com/Demwunz/laa-ccms-proto#readme",
   "dependencies": {
+    "autoprefixer": "^5.2.0",
     "express": "^4.13.3",
     "govuk_frontend_toolkit": "^4.1.1",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-jade": "^1.1.0",
     "gulp-livereload": "^3.8.0",
+    "gulp-postcss": "^5.1.10",
     "gulp-sass": "^2.0.4",
     "gulp-util": "^3.0.6",
+    "lost": "^6.5.0",
     "path": "^0.11.14",
     "tiny-lr": "^0.1.6"
   }

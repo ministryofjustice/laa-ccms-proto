@@ -2,6 +2,9 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var lost = require('lost');
 var jade = require('gulp-jade');
 var concat = require('gulp-concat');
 var livereload = require('gulp-livereload');
@@ -19,6 +22,10 @@ gulp.task('css', function () {
         includePaths: ['src/css'],
         errLogToConsole: true
       }))
+    .pipe(postcss([
+      lost(),
+      autoprefixer()
+    ]))
     .pipe(gulp.dest('public/css/'))
     .pipe(livereload(server));
 });
