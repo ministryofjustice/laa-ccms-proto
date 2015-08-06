@@ -32,9 +32,9 @@ LAA.buildGDScheckboxes = function () {
     var container = $(el),
       checkbox = container.find('input:checkbox'),
       label = container.find('label')
-        .addClass('block-label')
-        .removeClass('question');
-    checkbox.prependTo(label);
+      .addClass('block-label')
+      .removeClass('question')
+      .prepend(checkbox);
     LAA.toggleCheckedClass(checkbox, label);
   });
 };
@@ -48,7 +48,7 @@ LAA.toggleCheckedClass = function (input, label) {
     var is_checked = input.is(':checked');
 
     if(is_checked && is_radio) {
-      var siblings = label.parent('.block-label').siblings().find('label');
+      var siblings = label.parent('.block-label-wrapper').siblings().find('label');
       siblings.removeClass(change_class);
     }
 
@@ -69,9 +69,10 @@ LAA.buildGDSradios = function () {
 
   input.each(function (i, el) {
     var radio = $(el),
-      label = container.find('label[for="'+ el.id +'"]:visible').wrap('<div class="block-label"/>');
-
-    radio.prependTo(label);
+      label = container.find('label[for="'+ el.id +'"]:visible')
+      .addClass('block-label')
+      .wrap('<div class="block-label-wrapper"/>')
+      .prepend(radio);
     LAA.toggleCheckedClass(radio, label);
   });
 
@@ -79,5 +80,6 @@ LAA.buildGDSradios = function () {
 }
 
 $(function () {
+  $(document.documentElement).addClass(' js-enabled');
   LAA.init();
 });
