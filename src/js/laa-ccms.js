@@ -10,11 +10,13 @@ LAA.init = function () {
     LAA.buildGDSradios();
   }
 
-  LAA.moveSubmitButtons();
+  // LAA.moveSubmitButtons();
   LAA.fixUIgubbins();
 };
 
 LAA.fixUIgubbins = function () {
+  $('.opm-progress-screens')
+  .appendTo('.active-stage');
   $('.button-spacer, .submit-break').remove();
 }
 
@@ -24,6 +26,30 @@ LAA.moveSubmitButtons = function () {
 
   buttons.appendTo(form);
 };
+
+LAA.toggleCheckedClass = function (input, label) {
+  var is_radio = input.is(':radio'),
+    change_class = 'selected',
+    focusblur_class = 'add-focus';
+
+  input.on('change', function () {
+    var is_checked = input.is(':checked');
+
+    if(is_checked && is_radio) {
+      label.siblings('label:visible')
+      .removeClass(change_class);
+    }
+
+    label.toggleClass(change_class, is_checked);
+  })
+  .on('focus', function(){
+    label.addClass(focusblur_class);
+  })
+  .on('blur', function(){
+    label.removeClass(focusblur_class);
+  })
+  .change();
+}
 
 LAA.buildGDScheckboxes = function () {
   var control = $('.control-checkbox');
@@ -39,30 +65,6 @@ LAA.buildGDScheckboxes = function () {
   });
 };
 
-LAA.toggleCheckedClass = function (input, label) {
-  var is_radio = input.is(':radio'),
-    change_class = 'selected',
-    focusblur_class = 'add-focus';
-
-  input.on('change', function () {
-    var is_checked = input.is(':checked');
-
-    if(is_checked && is_radio) {
-      var siblings = label.parent('.block-label-wrapper').siblings().find('label');
-      siblings.removeClass(change_class);
-    }
-
-    label.toggleClass(change_class, is_checked);
-  })
-  .on('focus', function(){
-    label.addClass(focusblur_class);
-  })
-  .on('blur', function(){
-    label.removeClass(focusblur_class);
-  })
-  .change();
-}
-
 LAA.buildGDSradios = function () {
   var container = $('.radio-group-boolean').wrapInner('<fieldset class="inline"/>'),
     input = container.find('input:radio');
@@ -71,7 +73,6 @@ LAA.buildGDSradios = function () {
     var radio = $(el),
       label = container.find('label[for="'+ el.id +'"]:visible')
       .addClass('block-label')
-      .wrap('<div class="block-label-wrapper"/>')
       .prepend(radio);
     LAA.toggleCheckedClass(radio, label);
   });
@@ -80,6 +81,6 @@ LAA.buildGDSradios = function () {
 }
 
 $(function () {
-  $(document.documentElement).addClass(' js-enabled');
+  $(document.documentElement).addClass('js-enabled laa-ccms');
   LAA.init();
 });

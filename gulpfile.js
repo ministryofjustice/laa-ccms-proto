@@ -8,6 +8,7 @@ var lost = require('lost');
 var jade = require('gulp-jade');
 var concat = require('gulp-concat');
 var livereload = require('gulp-livereload');
+var minifycss = require('gulp-minify-css');
 var tinylr = require('tiny-lr');
 var express = require('express');
 var app = express();
@@ -26,6 +27,7 @@ gulp.task('css', function () {
       lost(),
       autoprefixer()
     ]))
+    .pipe(minifycss())
     .pipe(gulp.dest('public/css/'))
     .pipe(livereload(server));
 });
@@ -67,9 +69,11 @@ gulp.task('watch', function () {
 
     gulp.watch('src/js/*.js', ['js']);
 
-    gulp.watch('src/*.jade', ['templates']);
+    gulp.watch('src/**/*.jade', ['templates']);
   });
 });
 
+// Default Build
+gulp.task('build', ['js', 'css', 'templates', 'static']);
 // Default Task
 gulp.task('default', ['js', 'css', 'templates', 'static', 'express', 'watch']);
