@@ -170,8 +170,17 @@
   input{
     &[type=text]{
       &:focus{
-        outline: 3px solid $yellow;
+        outline: 3px solid $focus-colour;
       }
+    }
+  }
+  textarea{
+    overflow: auto;
+    max-width: 100%!important;
+    padding:$gutter-one-quarter;
+    resize: vertical;
+    &:focus{
+      outline: 3px solid $focus-colour;
     }
   }
 }

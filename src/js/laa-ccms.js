@@ -2,22 +2,13 @@
 
 var LAA = {};
 
-LAA.init = function () {
-  if ($('.control-checkbox').length) {
-    LAA.buildGDScheckboxes();
-  }
-  if ($('.radio-group-boolean').length) {
-    LAA.buildGDSradios();
-  }
-
-  // LAA.moveSubmitButtons();
-  LAA.fixUIgubbins();
-};
-
 LAA.fixUIgubbins = function () {
   $('.opm-progress-screens')
   .appendTo('.active-stage');
-  $('.button-spacer, .submit-break').remove();
+  // $('.button-spacer, .submit-break').remove();
+  $('textarea').each(function (i, el) {
+    $(el).attr('rows', 15);
+  });
 }
 
 LAA.moveSubmitButtons = function () {
@@ -82,5 +73,12 @@ LAA.buildGDSradios = function () {
 
 $(function () {
   $(document.documentElement).addClass('js-enabled laa-ccms');
-  LAA.init();
+  if ($('.control-checkbox').length) {
+    LAA.buildGDScheckboxes();
+  }
+  if ($('.radio-group-boolean').length) {
+    LAA.buildGDSradios();
+  }
+  // LAA.moveSubmitButtons();
+  LAA.fixUIgubbins();
 });
