@@ -6,8 +6,15 @@ LAA.fixUIgubbins = function () {
   $('.opm-progress-screens')
   .appendTo('.active-stage');
   // $('.button-spacer, .submit-break').remove();
+
   $('textarea').each(function (i, el) {
-    $(el).attr('rows', 15);
+    var textarea = $(el);
+    textarea.keydown(function () {
+      setTimeout(function () {
+        el.style.cssText = 'height:auto; padding:0';
+        el.style.cssText = 'height:' + el.scrollHeight + 'px';
+      },0);
+    });
   });
 }
 
