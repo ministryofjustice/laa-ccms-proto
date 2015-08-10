@@ -6,7 +6,7 @@
 
 //*******************************************************************************
 // LAA CCMS
-// @import '_gds_font';
+@import '_gds_font';
 //*******************************************************************************
 // LAA styles
 .block-label {
@@ -34,9 +34,20 @@
     float: left;
   }
   body {
+    // font-family: 'GDS Transport Website';
     background: white;
     margin-left: 100px;
   }
+
+
+  @for $i from 1 through 6 {
+    h#{$i},
+  	.Heading#{$i}{
+  		font-weight: 700;
+      font-style: normal;
+  	}
+  }
+
   .submit-break {
     display: none;
   }
@@ -151,6 +162,7 @@
   .inline {
     padding-top:$gutter-half;
   }
+
   button{
     &[type=submit] {
       @include button;

@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fields</title>
+    <link rel="stylesheet" type="text/css" href="/web-determinations/staticresource/reset.css">
+    <link rel="stylesheet" type="text/css" href="/web-determinations/staticresource/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="/web-determinations/staticresource/jquery.ui.theme.css">
+    <link rel="stylesheet" type="text/css" href="/web-determinations/staticresource/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/laa-ccms.css">
+    <script src="/web-determinations/staticresource/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.core.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.widget.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.position.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.button.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.menu.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.autocomplete.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.datepicker.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/custom-widgets.js" type="text/javascript"></script>
+  </head>
+  <body role="application">
+    <script type="text/javascript">
+      if (window.self !== window.top) {
+      jQuery("body").addClass("opm-frame");
+      }
+      jQuery("body").addClass("owd-has-js");
+    </script>
+    <div id="wrapper">
+      <div id="header" role="banner">
+        <div class="header-image"></div>
+      </div>
+      <div id="progress-stages" role="navigation">
+        <div class="opm-progress-stages">
+          <ul>
+            <li class="order-stage active-stage">PUI Inputs (For Testing Only)</li>
+            <li class="order-stage future-stage">Case Overview</li>
+            <li class="order-stage future-stage">ECF and LAR Details</li>
+            <li class="order-stage future-stage">Inquest</li>
+            <li class="order-stage future-stage">Case Details</li>
+            <li class="order-stage future-stage">Proceeding Specific</li>
+            <li class="order-stage future-stage">Criterion</li>
+            <li class="order-stage future-stage">Statements</li>
+            <li class="order-stage future-stage">Evidence</li>
+            <li class="order-stage future-stage">Declarations</li>
+            <li class="order-stage future-stage">Merits Assessment</li>
+          </ul>
+        </div>
+        <div class="opm-progress-screens">
+          <ul>
+            <li class="order-screen other-screen"><a href="/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global">PUI Global Input Screen</a></li>
+            <li class="order-screen active-screen"><a href="/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global">PUI Other Party Inputs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="progress-stages-mobile">
+        <div>
+          <select id="stages-select-mobile" class="active-stage"></select>
+        </div>
+        <div>
+          <select id="screen-select-mobile" class="active-screen"></select>
+        </div>
+      </div>
+      <div id="content" role="main">
+        <form id="owdInterviewForm" name="form" accept-charset="UTF-8" method="POST" action="/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global" enctype="multipart/form-data" role="form">
+          <h1 class="screen-title">PUI Other Party Inputs</h1>
+          <div id="cd-global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1" style="width:100%;" class="control-item">
+            <div id="msg-global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1" class="messages"></div>
+            <div role="grid" aria-label="the Opponent &amp; Other Parties">
+              <div role="row" aria-label="the Opponent &amp; Other Parties1">
+                <div class="entity-instance-group eig-odd">
+                  <div role="gridcell" class="entity-instance-widget">
+                    <div class="button-group">
+                      <div class="buttons">
+                        <button id="DELETEACTION_qsTEST_PUI_OTHER_PTY_INPUTglobalglobal0" name="DELETEACTION_qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0" type="submit" value="clicked" class="owd-remove">Remove</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="cd-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_ID" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_ID">What is the Opponent & Other Parties id?</label><img src="/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <input id="OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_ID" type="text" style="max-width:250px" name="OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_ID" value="1" size="35" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="true" aria-labelledby="lbl-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_ID" aria-describedby="msg-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_ID" class="owd-input">
+                    </div>
+                    <div id="msg-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_ID" class="messages"></div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_OTHER_PTY_INPUTglobalglobal1" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_OTHER_PTY_INPUTglobalglobal1" class="messages"></div>
+                    <div id="qsTEST_PUI_OTHER_PTY_INPUTglobalglobal1" class="owd-input Normal">(A number 1 to XX. i.e. 1st party = 1, second party = 2 etc)</div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_OTHER_PTY_INPUTglobalglobal2" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_OTHER_PTY_INPUTglobalglobal2" class="messages"></div>
+                    <div id="qsTEST_PUI_OTHER_PTY_INPUTglobalglobal2" class="owd-input Normal">.</div>
+                  </div>
+                  <div id="cd-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_NAME" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_NAME">What is the Opponent & Other Parties name?</label><img src="/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <input id="OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_NAME" type="text" style="max-width:250px" name="OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_NAME" value="BOB" size="35" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="true" aria-labelledby="lbl-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_NAME" aria-describedby="msg-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_NAME" class="owd-input">
+                    </div>
+                    <div id="msg-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_NAME" class="messages"></div>
+                  </div>
+                  <div id="cd-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_TYPE" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_TYPE">What is the Opponent & Other Parties type?</label><img src="/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <select id="OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_TYPE" style="max-width:250px" name="OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_TYPE" size="1" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="true" aria-labelledby="lbl-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_TYPE" aria-describedby="msg-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_TYPE" class="owd-input list-input">
+                        <option value=""> </option>
+                        <option selected="" value="PERSON">PERSON</option>
+                        <option value="ORGANISATION">ORGANISATION</option>
+                      </select>
+                    </div>
+                    <div id="msg-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_TYPE" class="messages"></div>
+                  </div>
+                  <div id="cd-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CASE" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CASE">What is the Opponent & Other Parties relationship to case code?</label><img src="/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <select id="OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CASE" style="max-width:250px" name="OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_RELATIONSHIP_TO_CASE" size="1" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="true" aria-labelledby="lbl-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CASE" aria-describedby="msg-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CASE" class="owd-input list-input">
+                        <option value=""> </option>
+                        <option selected="" value="OPP">OPP</option>
+                        <option value="INT_PAR">INT_PAR</option>
+                        <option value="AGENT">AGENT</option>
+                        <option value="CHILD">CHILD</option>
+                        <option value="BEN">BEN</option>
+                        <option value="INTERVENER">INTERVENER</option>
+                        <option value="GUARDIAN AD LITEM">GUARDIAN AD LITEM</option>
+                      </select>
+                    </div>
+                    <div id="msg-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CASE" class="messages"></div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_OTHER_PTY_INPUTglobalglobal3" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_OTHER_PTY_INPUTglobalglobal3" class="messages"></div>
+                    <div id="qsTEST_PUI_OTHER_PTY_INPUTglobalglobal3" class="owd-input Normal">(OPP = Opponent; INT_PAR = Interested Party; AGENT = Agent; CHILD = Child; BEN = Beneficiary; INTERVENER = Intervenor; GUARDIAN AD LITEM = Guardian ad Litem)</div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_OTHER_PTY_INPUTglobalglobal4" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_OTHER_PTY_INPUTglobalglobal4" class="messages"></div>
+                    <div id="qsTEST_PUI_OTHER_PTY_INPUTglobalglobal4" class="owd-input Normal">(NOTE: A proceeding which involves children must ALWAYS have another party as a child. This will be validated by the rule base)</div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_OTHER_PTY_INPUTglobalglobal5" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_OTHER_PTY_INPUTglobalglobal5" class="messages"></div>
+                    <div id="qsTEST_PUI_OTHER_PTY_INPUTglobalglobal5" class="owd-input Normal">.</div>
+                  </div>
+                  <div id="cd-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CLIENT" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CLIENT">What is the Opponent & Other Parties relationship to client code?</label><img src="/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <select id="OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CLIENT" style="max-width:250px" name="OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_RELATIONSHIP_TO_CLIENT" size="1" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="true" aria-labelledby="lbl-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CLIENT" aria-describedby="msg-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CLIENT" class="owd-input list-input">
+                        <option value=""> </option>
+                        <option value="SPOUSE">SPOUSE</option>
+                        <option value="EX_SPOUSE">EX SPOUSE</option>
+                        <option value="CIVIL PARTNER">CIVIL PARTNER</option>
+                        <option value="EX CIVIL PARTNER">EX CIVIL PARTNER</option>
+                        <option value="CHILD">CHILD</option>
+                        <option value="LANDLORD">LANDLORD</option>
+                        <option value="PARENT">PARENT</option>
+                        <option value="STEP PARENT">STEP PARENT</option>
+                        <option value="GRANDPARENT">GRANDPARENT</option>
+                        <option value="OTHER FAMILY MEMBER">OTHER FAMILY MEMBER</option>
+                        <option value="TENANT">TENANT</option>
+                        <option value="SUPPLIER">SUPPLIER</option>
+                        <option value="MEDICAL PROFESSIONAL">MEDICAL PROFESSIONAL</option>
+                        <option value="SOLICITOR_BARRISTER">SOLICITOR / BARRISTER</option>
+                        <option selected="" value="LOCAL AUTHORITY">LOCAL AUTHORITY</option>
+                        <option value="LEGAL_GUARDIAN">LEGAL GUARDIAN</option>
+                        <option value="CUSTOMER">CUSTOMER</option>
+                        <option value="EMPLOYER">EMPLOYER</option>
+                        <option value="EMPLOYEE">EMPLOYEE</option>
+                        <option value="NONE">NONE</option>
+                        <option value="UNKNOWN">UNKNOWN</option>
+                      </select>
+                    </div>
+                    <div id="msg-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CLIENT" class="messages"></div>
+                  </div>
+                  <div id="cd-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OPPONENT_DOB" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OPPONENT_DOB">What is the date of birth for the child for the Opponent & Other Parties?</label><img src="/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/mandatory.png" style="display: none" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <input id="OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OPPONENT_DOB" type="text" style="max-width:250px" name="OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB" value="" size="35" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="false" aria-labelledby="lbl-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OPPONENT_DOB" aria-describedby="msg-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OPPONENT_DOB" class="owd-input">
+                    </div>
+                    <div id="msg-OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OPPONENT_DOB" class="messages"></div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_OTHER_PTY_INPUTglobalglobal6" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_OTHER_PTY_INPUTglobalglobal6" class="messages"></div>
+                    <div id="qsTEST_PUI_OTHER_PTY_INPUTglobalglobal6" class="owd-input Normal">(The opponent and other parties date of birth. Mandatory if the other party relationship to the case is child)</div>
+                  </div>
+                  <input type="hidden" name="ENTITY_INSTANCE_global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1%5ethe+Opponent+%26+Other+Parties1" value="the Opponent &amp; Other Parties1">
+                </div>
+              </div>
+              <div role="row" aria-label="">
+                <div role="gridcell" class="control-item">
+                  <div class="button-group">
+                    <div class="buttons owd-buttons-right">
+                      <button id="ADDACTION_global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1" name="ADDACTION_global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1" type="submit" value="clicked" class="owd-add">Add New Instance</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="cd-form-buttons" class="control-item">
+            <div class="opm-submit-buttons">
+              <hr class="submit-break">
+              <div class="button-spacer"> </div>
+              <button id="back-button" name="back" type="button" value="clicked" class="owd-back">Back</button>
+              <button id="submit" name="submit" type="submit" value="clicked" class="owd-submit">Next</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var fadeAnimation = {
+      fadeInDuration: 0,
+      fadeOutDuration: 0
+      };
+    </script>
+    <script src="/web-determinations/staticresource/js-global-utilities.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var explanationParams = {
+      captionCollapseImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/bullet_down.gif",
+      captionExpandImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/bullet_right.gif",
+      nodeExpandImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/ei-expand.gif",
+      nodeExpandAlt: "Click to expand node",
+      nodeCollapseImage:  "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/ei-collapse.gif",
+      nodeCollapseAlt: "Click to collapse node"
+      };
+      var searchingComboboxes = {
+      maxResults: 20,
+      moreResultsText: "...",
+      triggerTooltip: "Show all items"
+      };
+      var datePickerOpts = {
+      buttonImageOnly: "true",
+      dateFormat: "d/m/y",
+      showOn: "both",
+      buttonText:  "Click to open calendar",
+      buttonImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/calendar.png",
+      dayNames: [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+      ],
+      dayNamesShort: [
+      "Sun",
+      "Mon",
+      "Tues",
+      "Wed",
+      "Thurs",
+      "Fri",
+      "Sat"
+      ],
+      dayNamesMin: [
+      "S",
+      "M",
+      "T",
+      "W",
+      "T",
+      "F",
+      "S"
+      ],
+      monthNames: [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+      ],
+      monthNamesShort: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+      ]
+      };
+      var screenInfo = {
+      backButtonCaption: "Back",
+      backButtonURL: "/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global",
+      controls: [],
+      controlsByName: {},
+      controlsByType: function(controlType){
+      var matches = [];
+      for(var i = 0; i < screenInfo.controls.length; ++i ){
+      if(screenInfo.controls[i].type === controlType)
+      matches.push(screenInfo.controls[i]);
+      }
+      return matches;
+      },
+      hintTextControls: function(){
+      var matches = [];
+      for(var i = 0; i < screenInfo.controls.length; ++i ){
+      if(screenInfo.controls[i].hintText !== undefined)
+      matches.push(screenInfo.controls[i]);
+      }
+      }
+      };
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
+      name: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      id: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      type: "ContainmentRelationshipControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal0",
+      type: "EntityInstanceControlGroup",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "TextBox",
+      displayValue: "1",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_ID",
+      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_ID",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global1",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal1",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global2",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal2",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "TextBox",
+      displayValue: "BOB",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_NAME",
+      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_NAME",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "Dropdown",
+      displayValue: "PERSON",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_TYPE",
+      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_TYPE",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "Dropdown",
+      displayValue: "OPP",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_RELATIONSHIP_TO_CASE",
+      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CASE",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global3",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal3",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global4",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal4",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global5",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal5",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "Dropdown",
+      displayValue: "LOCAL AUTHORITY",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_RELATIONSHIP_TO_CLIENT",
+      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CLIENT",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "TextBox",
+      displayValue: "",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB",
+      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OPPONENT_DOB",
+      type: "DateInputControl",
+      state: "optional"
+      };
+      ctrlInfo.dayVal = "";
+      ctrlInfo.monthVal = "";
+      ctrlInfo.yearVal = "";
+      ctrlInfo.name = "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
+      ctrlInfo.dayName = "day%3aOPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
+      ctrlInfo.monthName = "month%3aOPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
+      ctrlInfo.yearName = "year%3aOPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
+      ctrlInfo.readOnly = "false".toLowerCase() == "true";
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global6",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal6",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "",
+      id: "A",
+      type: "ButtonGroup",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "DELETEACTION_qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      id: "DELETEACTION_qsTEST_PUI_OTHER_PTY_INPUTglobalglobal0",
+      type: "ButtonControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      name: "buttons",
+      id: "buttons",
+      type: "ButtonGroup",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      name: "ADDACTION_global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      id: "ADDACTION_global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      type: "ButtonControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
+      name: "form-buttons",
+      id: "form-buttons",
+      type: "ButtonGroup",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
+      name: "submit",
+      id: "submit",
+      type: "ButtonControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var unsubmittedDataWarning = {
+      isEnabled: "false".toLowerCase() === "true",
+      hasUnsubmitted: "false".toLowerCase() === "true",
+      warningMsg: "This screen may have data that has not been submitted."
+      };
+      var stageData = {
+      stages: [
+      { "url" : "", "text":"PUI Inputs (For Testing Only)", "kind":"active-stage" }
+      ,
+      { "url" : "", "text":"Case Overview", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"ECF and LAR Details", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Inquest", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Case Details", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Proceeding Specific", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Criterion", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Statements", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Evidence", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Declarations", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Merits Assessment", "kind":"future-stage" }
+      ],
+      screens: [
+      { "url" : "/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global", "text":"PUI Global Input Screen", "kind":"other-screen" }
+      ,
+      { "url" : "/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global", "text":"PUI Other Party Inputs", "kind":"active-screen" }
+      ]
+      };
+      var dataFormats = {
+      "bool": {
+      "trueVal": "Yes",
+      "falseVal": "No",
+      "uncertainVal": "Uncertain",
+      "unknownVal": "Unknown"
+      }
+      };
+      var dynamicControlStateEnabled = true;
+      var controlRules = [
+      ];
+    </script>
+    <script src="/web-determinations/staticresource/OPAControlStateEvaluator.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/interview-screen-utilities.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var fadeAnimation = {
+      fadeInDuration: 0,
+      fadeOutDuration: 0
+      };
+    </script>
+    <script src="/web-determinations/staticresource/js-global-utilities.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var explanationParams = {
+      captionCollapseImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/bullet_down.gif",
+      captionExpandImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/bullet_right.gif",
+      nodeExpandImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/ei-expand.gif",
+      nodeExpandAlt: "Click to expand node",
+      nodeCollapseImage:  "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/ei-collapse.gif",
+      nodeCollapseAlt: "Click to collapse node"
+      };
+      var searchingComboboxes = {
+      maxResults: 20,
+      moreResultsText: "...",
+      triggerTooltip: "Show all items"
+      };
+      var datePickerOpts = {
+      buttonImageOnly: "true",
+      dateFormat: "d/m/y",
+      showOn: "both",
+      buttonText:  "Click to open calendar",
+      buttonImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/calendar.png",
+      dayNames: [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+      ],
+      dayNamesShort: [
+      "Sun",
+      "Mon",
+      "Tues",
+      "Wed",
+      "Thurs",
+      "Fri",
+      "Sat"
+      ],
+      dayNamesMin: [
+      "S",
+      "M",
+      "T",
+      "W",
+      "T",
+      "F",
+      "S"
+      ],
+      monthNames: [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+      ],
+      monthNamesShort: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+      ]
+      };
+      var screenInfo = {
+      backButtonCaption: "Back",
+      backButtonURL: "/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global",
+      controls: [],
+      controlsByName: {},
+      controlsByType: function(controlType){
+      var matches = [];
+      for(var i = 0; i < screenInfo.controls.length; ++i ){
+      if(screenInfo.controls[i].type === controlType)
+      matches.push(screenInfo.controls[i]);
+      }
+      return matches;
+      },
+      hintTextControls: function(){
+      var matches = [];
+      for(var i = 0; i < screenInfo.controls.length; ++i ){
+      if(screenInfo.controls[i].hintText !== undefined)
+      matches.push(screenInfo.controls[i]);
+      }
+      }
+      };
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
+      name: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      id: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      type: "ContainmentRelationshipControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal0",
+      type: "EntityInstanceControlGroup",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "TextBox",
+      displayValue: "1",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_ID",
+      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_ID",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global1",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal1",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global2",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal2",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "TextBox",
+      displayValue: "BOB",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_NAME",
+      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_NAME",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "Dropdown",
+      displayValue: "PERSON",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_TYPE",
+      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_TYPE",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "Dropdown",
+      displayValue: "OPP",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_RELATIONSHIP_TO_CASE",
+      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CASE",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global3",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal3",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global4",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal4",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global5",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal5",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "Dropdown",
+      displayValue: "LOCAL AUTHORITY",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_RELATIONSHIP_TO_CLIENT",
+      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CLIENT",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "TextBox",
+      displayValue: "",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB",
+      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OPPONENT_DOB",
+      type: "DateInputControl",
+      state: "optional"
+      };
+      ctrlInfo.dayVal = "";
+      ctrlInfo.monthVal = "";
+      ctrlInfo.yearVal = "";
+      ctrlInfo.name = "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
+      ctrlInfo.dayName = "day%3aOPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
+      ctrlInfo.monthName = "month%3aOPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
+      ctrlInfo.yearName = "year%3aOPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
+      ctrlInfo.readOnly = "false".toLowerCase() == "true";
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global6",
+      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal6",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "",
+      id: "A",
+      type: "ButtonGroup",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      name: "DELETEACTION_qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+      id: "DELETEACTION_qsTEST_PUI_OTHER_PTY_INPUTglobalglobal0",
+      type: "ButtonControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      name: "buttons",
+      id: "buttons",
+      type: "ButtonGroup",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      name: "ADDACTION_global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      id: "ADDACTION_global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+      type: "ButtonControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
+      name: "form-buttons",
+      id: "form-buttons",
+      type: "ButtonGroup",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
+      name: "submit",
+      id: "submit",
+      type: "ButtonControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var unsubmittedDataWarning = {
+      isEnabled: "false".toLowerCase() === "true",
+      hasUnsubmitted: "false".toLowerCase() === "true",
+      warningMsg: "This screen may have data that has not been submitted."
+      };
+      var stageData = {
+      stages: [
+      { "url" : "", "text":"PUI Inputs (For Testing Only)", "kind":"active-stage" }
+      ,
+      { "url" : "", "text":"Case Overview", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"ECF and LAR Details", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Inquest", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Case Details", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Proceeding Specific", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Criterion", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Statements", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Evidence", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Declarations", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Merits Assessment", "kind":"future-stage" }
+      ],
+      screens: [
+      { "url" : "/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global", "text":"PUI Global Input Screen", "kind":"other-screen" }
+      ,
+      { "url" : "/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global", "text":"PUI Other Party Inputs", "kind":"active-screen" }
+      ]
+      };
+      var dataFormats = {
+      "bool": {
+      "trueVal": "Yes",
+      "falseVal": "No",
+      "uncertainVal": "Uncertain",
+      "unknownVal": "Unknown"
+      }
+      };
+      var dynamicControlStateEnabled = true;
+      var controlRules = [
+      ];
+    </script>
+    <script src="/js/laa-ccms.min.js" type="text/javascript"></script>
+  </body>
+</html>
