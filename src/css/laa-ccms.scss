@@ -164,6 +164,9 @@ body {
 }
 
 button{
+  &.owd-submit{
+    background: transparent;
+  }
   &[type=submit] {
     @include button;
     float: left;
