@@ -41,8 +41,11 @@
     display: none;
   }
   .entity-instance-group {
-    background-color: #eff4f4;
+    background-color: #fff;
     border-top: 1px solid black;
+    .button-group {
+      font-size:small;
+    }
   }
 
   /* progress-stages */
@@ -161,6 +164,13 @@
       text-decoration: underline;
       &:hover{
         color:$link-hover-colour;
+      }
+    }
+  }
+  input{
+    &[type=text]{
+      &:focus{
+        outline: 3px solid $yellow;
       }
     }
   }

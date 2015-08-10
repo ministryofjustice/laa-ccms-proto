@@ -1,0 +1,814 @@
+//- urgent-application.jade
+extends ./partials/_layout.jade
+
+block title
+  title Urgent Application
+
+block content
+  #wrapper
+    #header(role='banner')
+      .header-image
+    #progress-stages(role='navigation')
+      .opm-progress-stages
+        ul
+          li.order-stage.other-stage
+            a(href='/web-determinations/0/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global')
+              | PUI Inputs (For Testing Only)
+          li.order-stage.active-stage
+            | Case Overview
+          li.order-stage.future-stage
+            | ECF and LAR Details
+          li.order-stage.future-stage
+            | Inquest
+          li.order-stage.future-stage
+            | Case Details
+          li.order-stage.future-stage
+            | Proceeding Specific
+          li.order-stage.future-stage
+            | Criterion
+          li.order-stage.future-stage
+            | Statements
+          li.order-stage.future-stage
+            | Evidence
+          li.order-stage.future-stage
+            | Declarations
+          li.order-stage.future-stage
+            | Merits Assessment
+      .opm-progress-screens
+        ul
+          li.order-screen.other-screen
+            a(href='/web-determinations/0/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24SA_INTRODUCTION%24global%24global/qs%24SA_INTRODUCTION%24global%24global')
+              | Introduction Screen
+          li.order-screen.active-screen
+            a(href='/web-determinations/0/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24URGENT_APPLICATION%24global%24global/qs%24URGENT_APPLICATION%24global%24global')
+              | Urgent Application
+    #progress-stages-mobile
+      div
+        select#stages-select-mobile.active-stage
+      div
+        select#screen-select-mobile.active-screen
+    #content(role='main')
+      form#owdInterviewForm(name='form', accept-charset='UTF-8', method='POST', action='/web-determinations/0/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24URGENT_APPLICATION%24global%24global/qs%24URGENT_APPLICATION%24global%24global?ACS-IP-Address=81.134.202.29&ACS-Session-ID=b10101e4f9213306ba4d5a6ad09b4462', enctype='multipart/form-data', role='form')
+        h1.screen-title
+          | Urgent Application
+        #cd-global_global_a_URGENT_FLAG.control-item(style='width:100%;')
+          .question
+            label#lbl-global_global_a_URGENT_FLAG Are you making an urgent application?
+            img.mandatory(src='/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/mandatory.png', style='', alt='This question is mandatory')
+          .control
+            .radio-group-boolean(role='radiogroup', aria-labelledby='lbl-global_global_a_URGENT_FLAG', aria-hidden='false', aria-disabled='false', aria-invalid='false', aria-required='true', aria-describedby='msg-global_global_a_URGENT_FLAG')
+              input#global_global_a_URGENT_FLAGt.owd-input(type='radio', name='global_global_a_URGENT_FLAG', value='true', aria-labelledby='lbl-global_global_a_URGENT_FLAGt')
+              label#lbl-global_global_a_URGENT_FLAGt(for='global_global_a_URGENT_FLAGt') Yes
+              input#global_global_a_URGENT_FLAGf.owd-input(type='radio', name='global_global_a_URGENT_FLAG', value='false', aria-labelledby='lbl-global_global_a_URGENT_FLAGf')
+              label#lbl-global_global_a_URGENT_FLAGf(for='global_global_a_URGENT_FLAGf') No
+              input#global_global_a_URGENT_FLAGu.owd-input(type='radio', name='global_global_a_URGENT_FLAG', value='', style='display: none', aria-labelledby='lbl-global_global_a_URGENT_FLAGu')
+              label#lbl-global_global_a_URGENT_FLAGu(for='global_global_a_URGENT_FLAGu', style='display: none') Uncertain
+          #msg-global_global_a_URGENT_FLAG.messages
+        #cd-qsURGENT_APPLICATIONglobalglobal0.control-item(style='width:100%;')
+          #msg-qsURGENT_APPLICATIONglobalglobal0.messages
+          h3#qsURGENT_APPLICATIONglobalglobal0.owd-input.Heading3 Help Note:
+        #cd-qsURGENT_APPLICATIONglobalglobal2.control-item(style='width:100%;')
+          #msg-qsURGENT_APPLICATIONglobalglobal2.messages
+          #qsURGENT_APPLICATIONglobalglobal2.owd-input.Normal
+            | If you use delegated functions your application must not be marked as urgent, as the work will be covered by the emergency certificate. You should only answer yes to the urgent question if you do not have delegated functions or there is a valid reason why delegated functions cannot be used - for example business means and there is action that urgently needs to be taken within 48 hours.
+        #cd-qsURGENT_APPLICATIONglobalglobal3.opm-container(style='width:100%;display: none')
+          #msg-qsURGENT_APPLICATIONglobalglobal3.messages
+          #cd-global_global_a_NON_ECF_URGENCY_REASONS.control-item(style='width:100%; ')
+            .question
+              label#lbl-global_global_a_NON_ECF_URGENCY_REASONS Please confirm why this application is regarded as urgent.
+              img.mandatory(src='/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/mandatory.png', style='', alt='This question is mandatory')
+            .control
+              textarea#global_global_a_NON_ECF_URGENCY_REASONS.owd-input(rows='5', cols='30', style='max-width:250px', name='global_global_a_NON_ECF_URGENCY_REASONS', aria-invalid='false', aria-labelledby='lbl-global_global_a_NON_ECF_URGENCY_REASONS', aria-hidden='false', aria-disabled='false', aria-required='true', aria-describedby='msg-global_global_a_NON_ECF_URGENCY_REASONS')
+            #msg-global_global_a_NON_ECF_URGENCY_REASONS.messages
+          #cd-qsURGENT_APPLICATIONglobalglobal4.control-item(style='width:100%; ')
+            #msg-qsURGENT_APPLICATIONglobalglobal4.messages
+            h3#qsURGENT_APPLICATIONglobalglobal4.owd-input.Heading3 Help Note:
+          #cd-qsURGENT_APPLICATIONglobalglobal5.control-item(style='width:100%; ')
+            #msg-qsURGENT_APPLICATIONglobalglobal5.messages
+            #qsURGENT_APPLICATIONglobalglobal5.owd-input.Normal
+              | Only applications in respect of work which is not covered under existing Legal Aid and needs to be completed within 48 hours maybe submitted as Urgent. If this application does not meet this definiton please answer “No” to “Are you making an urgent application?”
+          #cd-global_global_a_INJ_OTH_EMM_HEARING_DATE.control-item(style='width:100%; display: none')
+            .question
+              label#lbl-global_global_a_INJ_OTH_EMM_HEARING_DATE Date of Injunction/Urgent Hearing:
+              img.mandatory(src='/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/mandatory.png', style='display: none', alt='This question is mandatory')
+            .control
+              input#global_global_a_INJ_OTH_EMM_HEARING_DATE.owd-input.calendar(type='text', name='global_global_a_INJ_OTH_EMM_HEARING_DATE', value='', size='35', aria-invalid='false', aria-hidden='true', aria-disabled='false', aria-required='false', aria-labelledby='lbl-global_global_a_INJ_OTH_EMM_HEARING_DATE', aria-describedby='msg-global_global_a_INJ_OTH_EMM_HEARING_DATE')
+            #msg-global_global_a_INJ_OTH_EMM_HEARING_DATE.messages
+          #cd-global_global_a_EXIST_PROC_HEARING_DATE.control-item(style='width:100%; display: none')
+            .question
+              label#lbl-global_global_a_EXIST_PROC_HEARING_DATE Date of Existing Proceeding Hearing:
+              img.mandatory(src='/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/mandatory.png', style='display: none', alt='This question is mandatory')
+            .control
+              input#global_global_a_EXIST_PROC_HEARING_DATE.owd-input.calendar(type='text', name='global_global_a_EXIST_PROC_HEARING_DATE', value='', size='35', aria-invalid='false', aria-hidden='true', aria-disabled='false', aria-required='false', aria-labelledby='lbl-global_global_a_EXIST_PROC_HEARING_DATE', aria-describedby='msg-global_global_a_EXIST_PROC_HEARING_DATE')
+            #msg-global_global_a_EXIST_PROC_HEARING_DATE.messages
+          #cd-global_global_a_LIMIT_PERIOD_EXPIRE_DATE.control-item(style='width:100%; display: none')
+            .question
+              label#lbl-global_global_a_LIMIT_PERIOD_EXPIRE_DATE Date limitation period expires:
+              img.mandatory(src='/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/mandatory.png', style='display: none', alt='This question is mandatory')
+            .control
+              input#global_global_a_LIMIT_PERIOD_EXPIRE_DATE.owd-input.calendar(type='text', name='global_global_a_LIMIT_PERIOD_EXPIRE_DATE', value='', size='35', aria-invalid='false', aria-hidden='true', aria-disabled='false', aria-required='false', aria-labelledby='lbl-global_global_a_LIMIT_PERIOD_EXPIRE_DATE', aria-describedby='msg-global_global_a_LIMIT_PERIOD_EXPIRE_DATE')
+            #msg-global_global_a_LIMIT_PERIOD_EXPIRE_DATE.messages
+          #cd-global_global_a_RISK_DELAY_DETAILS.control-item(style='width:100%; display: none')
+            .question
+              label#lbl-global_global_a_RISK_DELAY_DETAILS
+                | Please give details of why it is believed that the delay would cause risk to the life liberty or physical safety of the client or his or her family or the roof over their heads.
+              img.mandatory(src='/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/mandatory.png', style='display: none', alt='This question is mandatory')
+            .control
+              textarea#global_global_a_RISK_DELAY_DETAILS.owd-input(rows='5', cols='30', style='max-width:250px', name='global_global_a_RISK_DELAY_DETAILS', aria-invalid='false', aria-labelledby='lbl-global_global_a_RISK_DELAY_DETAILS', aria-hidden='true', aria-disabled='false', aria-required='false', aria-describedby='msg-global_global_a_RISK_DELAY_DETAILS')
+            #msg-global_global_a_RISK_DELAY_DETAILS.messages
+          #cd-global_global_a_UN_HARD_DELAY_DETAILS.control-item(style='width:100%; display: none')
+            .question
+              label#lbl-global_global_a_UN_HARD_DELAY_DETAILS
+                | Please give details of why it is believed the delay will cause a significant miscarriage of justice or unreasonable hardship to the client or irretrievable problems in handling the case.
+              img.mandatory(src='/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/mandatory.png', style='display: none', alt='This question is mandatory')
+            .control
+              textarea#global_global_a_UN_HARD_DELAY_DETAILS.owd-input(rows='5', cols='30', style='max-width:250px', name='global_global_a_UN_HARD_DELAY_DETAILS', aria-invalid='false', aria-labelledby='lbl-global_global_a_UN_HARD_DELAY_DETAILS', aria-hidden='true', aria-disabled='false', aria-required='false', aria-describedby='msg-global_global_a_UN_HARD_DELAY_DETAILS')
+            #msg-global_global_a_UN_HARD_DELAY_DETAILS.messages
+          #cd-global_global_a_OTH_REASON_DELAY_DETAILS.control-item(style='width:100%; display: none')
+            .question
+              label#lbl-global_global_a_OTH_REASON_DELAY_DETAILS Please confirm the details of the other reason for urgency.
+              img.mandatory(src='/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/mandatory.png', style='display: none', alt='This question is mandatory')
+            .control
+              textarea#global_global_a_OTH_REASON_DELAY_DETAILS.owd-input(rows='5', cols='30', style='max-width:250px', name='global_global_a_OTH_REASON_DELAY_DETAILS', aria-invalid='false', aria-labelledby='lbl-global_global_a_OTH_REASON_DELAY_DETAILS', aria-hidden='true', aria-disabled='false', aria-required='false', aria-describedby='msg-global_global_a_OTH_REASON_DELAY_DETAILS')
+            #msg-global_global_a_OTH_REASON_DELAY_DETAILS.messages
+          .clear
+        #cd-form-buttons.control-item
+          .opm-submit-buttons
+            hr.submit-break
+            .button-spacer  
+            button#back-button.owd-back(name='back', type='button', value='clicked') Back
+            button#submit.owd-submit(name='submit', type='submit', value='clicked') Next
+block pagejs  
+  script(type='text/javascript').
+    var fadeAnimation = {
+    fadeInDuration: 0,
+    fadeOutDuration: 0
+    };
+  script(src='/web-determinations/staticresource/js-global-utilities.js', type='text/javascript')
+  script(type='text/javascript').
+    var explanationParams = {
+    captionCollapseImage: "/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/bullet_down.gif",
+    captionExpandImage: "/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/bullet_right.gif",
+    nodeExpandImage: "/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/ei-expand.gif",
+    nodeExpandAlt: "Click to expand node",
+    nodeCollapseImage:  "/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/ei-collapse.gif",
+    nodeCollapseAlt: "Click to collapse node"
+    };
+    var searchingComboboxes = {
+    maxResults: 20,
+    moreResultsText: "...",
+    triggerTooltip: "Show all items"
+    };
+    var datePickerOpts = {
+    buttonImageOnly: "true",
+    dateFormat: "d/m/y",
+    showOn: "both",
+    buttonText:  "Click to open calendar",
+    buttonImage: "/web-determinations/0/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/calendar.png",
+    dayNames: [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+    ],
+    dayNamesShort: [
+    "Sun",
+    "Mon",
+    "Tues",
+    "Wed",
+    "Thurs",
+    "Fri",
+    "Sat"
+    ],
+    dayNamesMin: [
+    "S",
+    "M",
+    "T",
+    "W",
+    "T",
+    "F",
+    "S"
+    ],
+    monthNames: [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+    ],
+    monthNamesShort: [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+    ]
+    };
+    var screenInfo = {
+    backButtonCaption: "Back",
+    backButtonURL: "/web-determinations/0/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24SA_INTRODUCTION%24global%24global/qs%24SA_INTRODUCTION%24global%24global",
+    controls: [],
+    controlsByName: {},
+    controlsByType: function(controlType){
+    var matches = [];
+    for(var i = 0; i < screenInfo.controls.length; ++i ){
+    if(screenInfo.controls[i].type === controlType)
+    matches.push(screenInfo.controls[i]);
+    }
+    return matches;
+    },
+    hintTextControls: function(){
+    var matches = [];
+    for(var i = 0; i < screenInfo.controls.length; ++i ){
+    if(screenInfo.controls[i].hintText !== undefined)
+    matches.push(screenInfo.controls[i]);
+    }
+    }
+    };
+    var ctrlInfo = {
+    inputType: "Radiobutton",
+    displayValue: "",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global",
+    name: "global_global_a_URGENT_FLAG",
+    id: "global_global_a_URGENT_FLAG",
+    type: "BooleanInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global",
+    name: "qs%24URGENT_APPLICATION%24global%24global0",
+    id: "qsURGENT_APPLICATIONglobalglobal0",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global",
+    name: "qs%24URGENT_APPLICATION%24global%24global1",
+    id: "qsURGENT_APPLICATIONglobalglobal1",
+    type: "LabelControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global",
+    name: "qs%24URGENT_APPLICATION%24global%24global2",
+    id: "qsURGENT_APPLICATIONglobalglobal2",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global",
+    name: "qs%24URGENT_APPLICATION%24global%24global3",
+    id: "qsURGENT_APPLICATIONglobalglobal3",
+    type: "ContainerControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "text-area",
+    displayValue: "",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_NON_ECF_URGENCY_REASONS",
+    id: "global_global_a_NON_ECF_URGENCY_REASONS",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "qs%24URGENT_APPLICATION%24global%24global4",
+    id: "qsURGENT_APPLICATIONglobalglobal4",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "qs%24URGENT_APPLICATION%24global%24global5",
+    id: "qsURGENT_APPLICATIONglobalglobal5",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Calendar",
+    displayValue: "",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_URGENCY_AWARE_DATE",
+    id: "global_global_a_URGENCY_AWARE_DATE",
+    type: "DateInputControl",
+    state: "hidden"
+    };
+    ctrlInfo.dayVal = "";
+    ctrlInfo.monthVal = "";
+    ctrlInfo.yearVal = "";
+    ctrlInfo.name = "global_global_a_URGENCY_AWARE_DATE";
+    ctrlInfo.dayName = "day%3aglobal_global_a_URGENCY_AWARE_DATE";
+    ctrlInfo.monthName = "month%3aglobal_global_a_URGENCY_AWARE_DATE";
+    ctrlInfo.yearName = "year%3aglobal_global_a_URGENCY_AWARE_DATE";
+    ctrlInfo.readOnly = "false".toLowerCase() == "true";
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "qs%24URGENT_APPLICATION%24global%24global6",
+    id: "qsURGENT_APPLICATIONglobalglobal6",
+    type: "LabelControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Radiobutton",
+    displayValue: "No",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_DEAD_LINE_INJ",
+    id: "global_global_a_DEAD_LINE_INJ",
+    type: "BooleanInputControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Calendar",
+    displayValue: "",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_INJ_OTH_EMM_HEARING_DATE",
+    id: "global_global_a_INJ_OTH_EMM_HEARING_DATE",
+    type: "DateInputControl",
+    state: "hidden"
+    };
+    ctrlInfo.dayVal = "";
+    ctrlInfo.monthVal = "";
+    ctrlInfo.yearVal = "";
+    ctrlInfo.name = "global_global_a_INJ_OTH_EMM_HEARING_DATE";
+    ctrlInfo.dayName = "day%3aglobal_global_a_INJ_OTH_EMM_HEARING_DATE";
+    ctrlInfo.monthName = "month%3aglobal_global_a_INJ_OTH_EMM_HEARING_DATE";
+    ctrlInfo.yearName = "year%3aglobal_global_a_INJ_OTH_EMM_HEARING_DATE";
+    ctrlInfo.readOnly = "false".toLowerCase() == "true";
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Radiobutton",
+    displayValue: "No",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_DEAD_LINE_EX_PROC",
+    id: "global_global_a_DEAD_LINE_EX_PROC",
+    type: "BooleanInputControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Calendar",
+    displayValue: "",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_EXIST_PROC_HEARING_DATE",
+    id: "global_global_a_EXIST_PROC_HEARING_DATE",
+    type: "DateInputControl",
+    state: "hidden"
+    };
+    ctrlInfo.dayVal = "";
+    ctrlInfo.monthVal = "";
+    ctrlInfo.yearVal = "";
+    ctrlInfo.name = "global_global_a_EXIST_PROC_HEARING_DATE";
+    ctrlInfo.dayName = "day%3aglobal_global_a_EXIST_PROC_HEARING_DATE";
+    ctrlInfo.monthName = "month%3aglobal_global_a_EXIST_PROC_HEARING_DATE";
+    ctrlInfo.yearName = "year%3aglobal_global_a_EXIST_PROC_HEARING_DATE";
+    ctrlInfo.readOnly = "false".toLowerCase() == "true";
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Radiobutton",
+    displayValue: "No",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_DEAD_LINE_LIM_PER",
+    id: "global_global_a_DEAD_LINE_LIM_PER",
+    type: "BooleanInputControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Calendar",
+    displayValue: "",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_LIMIT_PERIOD_EXPIRE_DATE",
+    id: "global_global_a_LIMIT_PERIOD_EXPIRE_DATE",
+    type: "DateInputControl",
+    state: "hidden"
+    };
+    ctrlInfo.dayVal = "";
+    ctrlInfo.monthVal = "";
+    ctrlInfo.yearVal = "";
+    ctrlInfo.name = "global_global_a_LIMIT_PERIOD_EXPIRE_DATE";
+    ctrlInfo.dayName = "day%3aglobal_global_a_LIMIT_PERIOD_EXPIRE_DATE";
+    ctrlInfo.monthName = "month%3aglobal_global_a_LIMIT_PERIOD_EXPIRE_DATE";
+    ctrlInfo.yearName = "year%3aglobal_global_a_LIMIT_PERIOD_EXPIRE_DATE";
+    ctrlInfo.readOnly = "false".toLowerCase() == "true";
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Radiobutton",
+    displayValue: "No",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_DEAD_LINE_LIFE",
+    id: "global_global_a_DEAD_LINE_LIFE",
+    type: "BooleanInputControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "text-area",
+    displayValue: "",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_RISK_DELAY_DETAILS",
+    id: "global_global_a_RISK_DELAY_DETAILS",
+    type: "TextInputControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Radiobutton",
+    displayValue: "No",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_DEAD_LINE_JUSTICE",
+    id: "global_global_a_DEAD_LINE_JUSTICE",
+    type: "BooleanInputControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "text-area",
+    displayValue: "",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_UN_HARD_DELAY_DETAILS",
+    id: "global_global_a_UN_HARD_DELAY_DETAILS",
+    type: "TextInputControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Radiobutton",
+    displayValue: "No",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_DEAD_LINE_OTHER",
+    id: "global_global_a_DEAD_LINE_OTHER",
+    type: "BooleanInputControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "text-area",
+    displayValue: "",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global3",
+    name: "global_global_a_OTH_REASON_DELAY_DETAILS",
+    id: "global_global_a_OTH_REASON_DELAY_DETAILS",
+    type: "TextInputControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global",
+    name: "qs%24URGENT_APPLICATION%24global%24global7",
+    id: "qsURGENT_APPLICATIONglobalglobal7",
+    type: "ContainerControl",
+    state: "hidden"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "text-area",
+    displayValue: "",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global7",
+    name: "global_global_a_EFF_ADMIN_JUST_REASON",
+    id: "global_global_a_EFF_ADMIN_JUST_REASON",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global7",
+    name: "qs%24URGENT_APPLICATION%24global%24global8",
+    id: "qsURGENT_APPLICATIONglobalglobal8",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global7",
+    name: "qs%24URGENT_APPLICATION%24global%24global9",
+    id: "qsURGENT_APPLICATIONglobalglobal9",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global7",
+    name: "qs%24URGENT_APPLICATION%24global%24global10",
+    id: "qsURGENT_APPLICATIONglobalglobal10",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global",
+    name: "form-buttons",
+    id: "form-buttons",
+    type: "ButtonGroup",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24URGENT_APPLICATION%24global%24global",
+    name: "submit",
+    id: "submit",
+    type: "ButtonControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var unsubmittedDataWarning = {
+    isEnabled: "true".toLowerCase() === "true",
+    hasUnsubmitted: "false".toLowerCase() === "true",
+    warningMsg: "This screen may have data that has not been submitted."
+    };
+    var stageData = {
+    stages: [
+    { "url" : "/web-determinations/0/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global", "text":"PUI Inputs (For Testing Only)", "kind":"other-stage" }
+    ,
+    { "url" : "", "text":"Case Overview", "kind":"active-stage" }
+    ,
+    { "url" : "", "text":"ECF and LAR Details", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Inquest", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Case Details", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Proceeding Specific", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Criterion", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Statements", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Evidence", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Declarations", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Merits Assessment", "kind":"future-stage" }
+    ],
+    screens: [
+    { "url" : "/web-determinations/0/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24SA_INTRODUCTION%24global%24global/qs%24SA_INTRODUCTION%24global%24global", "text":"Introduction Screen", "kind":"other-screen" }
+    ,
+    { "url" : "/web-determinations/0/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24URGENT_APPLICATION%24global%24global/qs%24URGENT_APPLICATION%24global%24global", "text":"Urgent Application", "kind":"active-screen" }
+    ]
+    };
+    var dataFormats = {
+    "bool": {
+    "trueVal": "Yes",
+    "falseVal": "No",
+    "uncertainVal": "Uncertain",
+    "unknownVal": "Unknown"
+    }
+    };
+    var dynamicControlStateEnabled = true;
+    var controlRules = [
+    {
+    "ctrlName": "qs%24URGENT_APPLICATION%24global%24global3",
+    "currentState":"hidden",
+    "defaultState": "enabled",
+    "hideIfExpr":     {
+    "isConstant": "false".toLowerCase() === "true",
+    "exprType": "Unless",
+    "exprOp": "==",
+    "attrCtrlName": "global_global_a_URGENT_FLAG",
+    "exprValType": 1,
+    "exprVals":     [
+    true
+    ]
+    }
+    ,
+    "readOnlyIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    ,
+    "optionalIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    }
+    ,
+    {
+    "ctrlName": "global_global_a_INJ_OTH_EMM_HEARING_DATE",
+    "currentState":"hidden",
+    "defaultState": "enabled",
+    "hideIfExpr":     {
+    "isConstant": "false".toLowerCase() === "true",
+    "exprType": "Unless",
+    "exprOp": "==",
+    "attrCtrlName": "global_global_a_DEAD_LINE_INJ",
+    "exprValType": 1,
+    "exprVals":     [
+    true
+    ]
+    }
+    ,
+    "readOnlyIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    ,
+    "optionalIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    }
+    ,
+    {
+    "ctrlName": "global_global_a_EXIST_PROC_HEARING_DATE",
+    "currentState":"hidden",
+    "defaultState": "enabled",
+    "hideIfExpr":     {
+    "isConstant": "false".toLowerCase() === "true",
+    "exprType": "Unless",
+    "exprOp": "==",
+    "attrCtrlName": "global_global_a_DEAD_LINE_EX_PROC",
+    "exprValType": 1,
+    "exprVals":     [
+    true
+    ]
+    }
+    ,
+    "readOnlyIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    ,
+    "optionalIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    }
+    ,
+    {
+    "ctrlName": "global_global_a_LIMIT_PERIOD_EXPIRE_DATE",
+    "currentState":"hidden",
+    "defaultState": "enabled",
+    "hideIfExpr":     {
+    "isConstant": "false".toLowerCase() === "true",
+    "exprType": "Unless",
+    "exprOp": "==",
+    "attrCtrlName": "global_global_a_DEAD_LINE_LIM_PER",
+    "exprValType": 1,
+    "exprVals":     [
+    true
+    ]
+    }
+    ,
+    "readOnlyIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    ,
+    "optionalIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    }
+    ,
+    {
+    "ctrlName": "global_global_a_RISK_DELAY_DETAILS",
+    "currentState":"hidden",
+    "defaultState": "optional",
+    "hideIfExpr":     {
+    "isConstant": "false".toLowerCase() === "true",
+    "exprType": "Unless",
+    "exprOp": "==",
+    "attrCtrlName": "global_global_a_DEAD_LINE_LIFE",
+    "exprValType": 1,
+    "exprVals":     [
+    true
+    ]
+    }
+    ,
+    "readOnlyIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    ,
+    "optionalIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    }
+    ,
+    {
+    "ctrlName": "global_global_a_UN_HARD_DELAY_DETAILS",
+    "currentState":"hidden",
+    "defaultState": "optional",
+    "hideIfExpr":     {
+    "isConstant": "false".toLowerCase() === "true",
+    "exprType": "Unless",
+    "exprOp": "==",
+    "attrCtrlName": "global_global_a_DEAD_LINE_JUSTICE",
+    "exprValType": 1,
+    "exprVals":     [
+    true
+    ]
+    }
+    ,
+    "readOnlyIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    ,
+    "optionalIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    }
+    ,
+    {
+    "ctrlName": "global_global_a_OTH_REASON_DELAY_DETAILS",
+    "currentState":"hidden",
+    "defaultState": "optional",
+    "hideIfExpr":     {
+    "isConstant": "false".toLowerCase() === "true",
+    "exprType": "Unless",
+    "exprOp": "==",
+    "attrCtrlName": "global_global_a_DEAD_LINE_OTHER",
+    "exprValType": 1,
+    "exprVals":     [
+    true
+    ]
+    }
+    ,
+    "readOnlyIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    ,
+    "optionalIfExpr":     {
+    "isConstant": "true".toLowerCase() === "true",
+    "result" : "false".toLowerCase() === "true"
+    }
+    }
+    ];
+  script(src='/web-determinations/staticresource/OPAControlStateEvaluator.js', type='text/javascript')
+  script(src='/web-determinations/staticresource/interview-screen-utilities.js', type='text/javascript')

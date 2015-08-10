@@ -16,5 +16,6 @@ html(lang='en-US', dir='ltr')
       }
       jQuery("body").addClass("owd-has-js");
     block content
-    include ./_pagejs.jade
+    block pagejs
+      include ./_pagejs.jade
     script(src='/js/laa-ccms.min.js', type='text/javascript')
