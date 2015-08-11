@@ -164,6 +164,7 @@ body {
 }
 
 button{
+  background: transparent;
   &.owd-submit{
     background: transparent;
   }
@@ -180,6 +181,12 @@ button{
     &:hover{
       color:$link-hover-colour;
     }
+    &:focus{
+      border:3px solid $focus-colour;
+    }
+  }
+  &:focus{
+    outline:3px solid $focus-colour;
   }
 }
 input{
@@ -196,5 +203,13 @@ textarea{
   resize: vertical;
   &:focus{
     outline: 3px solid $focus-colour;
+  }
+}
+select{
+  outline:2px solid #fff;
+  border:1px solid $grey-1;
+  &:focus {
+    outline:2px solid $focus-colour;
+    border:1px solid $focus-colour;
   }
 }

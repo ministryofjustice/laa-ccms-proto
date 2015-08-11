@@ -9,14 +9,14 @@ LAA.fixUIgubbins = function () {
 
   $('textarea').each(function (i, el) {
     var textarea = $(el);
-    textarea.keydown(function () {
+    textarea.keyup(function () {
       setTimeout(function () {
         el.style.cssText = 'height:auto; padding:0';
         el.style.cssText = 'height:' + el.scrollHeight + 'px';
       },0);
     });
   });
-}
+};
 
 LAA.moveSubmitButtons = function () {
   var buttons = $('.opm-submit-buttons'),
