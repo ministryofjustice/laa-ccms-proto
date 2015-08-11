@@ -24,6 +24,9 @@ body.owd-has-js {
       background: $white;
       border-color: $black;
     }
+    input{
+      top:15px;
+    }
   }
 
   .control {
@@ -176,14 +179,18 @@ body.owd-has-js {
     }
     &[type=submit] {
       @include button;
+      padding: 0.8em 1.6em;
+      font-size:1.1em;
       float: left;
     }
     &#back-button{
-      border:none;
+      border:3px solid #fff;
       outline:none;
       background:#fff;
       color:$link-colour;
+      padding: 0.8em 1.6em;
       text-decoration: underline;
+      font-size:1.1em;
       &:hover{
         color:$link-hover-colour;
       }

@@ -163,6 +163,8 @@ body.owd-has-js {
   .owd-has-js .block-label.selected {
     background: #fff;
     border-color: #0b0c0c; }
+  .owd-has-js .block-label input {
+    top: 15px; }
   .owd-has-js .control {
     padding-left: 29px; }
   .owd-has-js #owdInterviewForm {
@@ -297,6 +299,8 @@ body.owd-has-js {
       -webkit-font-smoothing: antialiased;
       cursor: pointer;
       color: #fff;
+      padding: 0.8em 1.6em;
+      font-size: 1.1em;
       float: left; }
       .owd-has-js button[type=submit]:visited {
         background-color: #00823b; }
@@ -345,11 +349,13 @@ body.owd-has-js {
         margin-left: 0;
         margin-right: 0; }
     .owd-has-js button#back-button {
-      border: none;
+      border: 3px solid #fff;
       outline: none;
       background: #fff;
       color: #005ea5;
-      text-decoration: underline; }
+      padding: 0.8em 1.6em;
+      text-decoration: underline;
+      font-size: 1.1em; }
       .owd-has-js button#back-button:hover {
         color: #2e8aca; }
       .owd-has-js button#back-button:focus {
