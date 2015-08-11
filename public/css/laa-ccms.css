@@ -352,8 +352,10 @@ body.owd-has-js {
         border: 3px solid #ffbf47; }
     .owd-has-js button:focus {
       outline: 3px solid #ffbf47; }
-  .owd-has-js input[type=text]:focus {
-    outline: 3px solid #ffbf47; }
+  .owd-has-js input[type=text] {
+    padding: 7.5px; }
+    .owd-has-js input[type=text]:focus {
+      outline: 3px solid #ffbf47; }
   .owd-has-js textarea {
     overflow: auto;
     max-width: 100% !important;

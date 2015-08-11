@@ -65,11 +65,11 @@ LAA.buildGDScheckboxes = function () {
 
 LAA.buildGDSradios = function () {
   var container = $('.radio-group-boolean').wrapInner('<fieldset class="inline"/>'),
-    input = container.find('input:radio');
+    inputs = container.find('input:radio');
 
-  input.each(function (i, el) {
+  inputs.each(function (i, el) {
     var radio = $(el),
-      label = container.find('label[for="'+ el.id +'"]:visible')
+      label = container.find('label[for="'+ el.id +'"]')
       .addClass('block-label')
       .prepend(radio);
     LAA.toggleCheckedClass(radio, label);

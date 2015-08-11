@@ -192,6 +192,7 @@ body.owd-has-js {
   }
   input{
     &[type=text]{
+      padding:$gutter-one-quarter;
       &:focus{
         outline: 3px solid $focus-colour;
       }
