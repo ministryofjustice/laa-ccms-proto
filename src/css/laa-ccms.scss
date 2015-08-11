@@ -7,209 +7,211 @@
 //*******************************************************************************
 // LAA CCMS
 @import '_gds_font';
+
 //*******************************************************************************
 // LAA styles
-.block-label {
-  &.add-focus {
-    outline: 3px solid $yellow;
-  }
-  &.selected {
-    background: $white;
-    border-color: $black;
-  }
-}
-
-.control {
-  padding-left: 29px;
-}
-#owdInterviewForm {
-  background-color: #fff;
-}
-
-//********************* USE THE FORCE LUKE! ***********************************
-/* Test OPA CSS for demo only */
-/* page tweaks */
-#content {
-  width: 600px;
-  float: left;
-}
-body {
+body.owd-has-js {
   // font-family: 'GDS Transport Website';
   background: white;
   margin-left: 100px;
 }
-
-
-@for $i from 1 through 6 {
-  h#{$i},
-	.Heading#{$i}{
-		font-weight: 700;
-    font-style: normal;
-	}
-}
-
-.submit-break {
-  display: none;
-}
-.entity-instance-group {
-  background-color: #fff;
-  border-top: 1px solid black;
-  .button-group {
-    font-size:small;
-  }
-}
-
-/* progress-stages */
-#progress-stages {
-  float: left;
-  margin-right: 10px;
-  width: 230px;
-  border: none;
-  a {
-    display: block;
-  }
-  li {
-    padding: 0;
-    display: list-item;
-    list-style-type: none;
-    word-break: break-all;
-    &.order-stage{
-        padding-left:10px;
+.owd-has-js {
+  .block-label {
+    &.add-focus {
+      outline: 3px solid $yellow;
     }
-    &.other-screen {
-      background: white;
-      color: black;
-      &:hover {
-        font-weight: normal;
-        background-color: #eee;
-      }
-    }
-    &.active-stage {
-      color: black;
-      background: white;
-      border-right: 0;
-      font-weight: normal;
-      padding-left:0;
-      text-indent: 10px;
-      a {
-        text-indent: 0;
-        padding-left: 20px;
-        word-break: break-all;
-      }
-      .active-screen a{
-        padding-left:16px;
-      }
-    }
-
-  }
-}
-.opa-responsive-stages {
-  margin-top: 0;
-}
-.opm-progress-stages {
-  background-color: #fff;
-  border: 1px solid #bcbcbc;
-  border-bottom: 0;
-  li {
-    display: list-item;
-    font-size: 12px;
-    border-bottom: 1px solid #bcbcbc;
-    a {
-
-      //  padding-left: 10px;
+    &.selected {
+      background: $white;
+      border-color: $black;
     }
   }
-}
-.other-stage {
-  color: black;
-  cursor: pointer;
-  background-color: white;
-  &:hover {
-    border-right: 0;
-    font-weight: normal;
-    background-color: #eee;
+
+  .control {
+    padding-left: 29px;
   }
-}
-
-.future-stage {
-  color: #3a3a3a;
-  background-color: #dcdcdc;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-/* Screens */
-.opm-progress-screens {
-  background-color: white;
-  display: block;
-  li {
-    font-size: 10px;
-    border-bottom: 0;
-    padding-left: 10px;
+  #owdInterviewForm {
+    background-color: #fff;
   }
-  a {
-    font-weight: normal;
-    padding-left: 10px;
-  }
-}
 
-.active-screen {
-  background: white;
-  color: black;
-  border-left: 4px solid #ffc037;
-}
-
-.inline {
-  padding-top:$gutter-half;
-}
-
-button{
-  background: transparent;
-  &.owd-submit{
-    background: transparent;
-  }
-  &[type=submit] {
-    @include button;
+  //********************* USE THE FORCE LUKE! ***********************************
+  /* Test OPA CSS for demo only */
+  /* page tweaks */
+  #content {
+    width: 600px;
     float: left;
   }
-  &#back-button{
-    border:none;
-    outline:none;
-    background:#fff;
-    color:$link-colour;
-    text-decoration: underline;
-    &:hover{
-      color:$link-hover-colour;
+
+  @for $i from 1 through 6 {
+    h#{$i},
+  	.Heading#{$i}{
+  		font-weight: 700;
+      font-style: normal;
+  	}
+  }
+
+  .submit-break {
+    display: none;
+  }
+  .entity-instance-group {
+    background-color: #fff;
+    border-top: 1px solid black;
+    .button-group {
+      font-size:small;
+    }
+  }
+
+  /* progress-stages */
+  #progress-stages {
+    float: left;
+    margin-right: 10px;
+    width: 230px;
+    border: none;
+    a {
+      display: block;
+    }
+    li {
+      padding: 0;
+      display: list-item;
+      list-style-type: none;
+      word-break: break-all;
+      &.order-stage{
+          padding-left:10px;
+      }
+      &.other-screen {
+        background: white;
+        color: black;
+        &:hover {
+          font-weight: normal;
+          background-color: #eee;
+        }
+      }
+      &.active-stage {
+        color: black;
+        background: white;
+        border-right: 0;
+        font-weight: normal;
+        padding-left:0;
+        text-indent: 10px;
+        a {
+          text-indent: 0;
+          padding-left: 20px;
+          word-break: break-all;
+        }
+        .active-screen a{
+          padding-left:16px;
+        }
+      }
+
+    }
+  }
+  .opa-responsive-stages {
+    margin-top: 0;
+  }
+  .opm-progress-stages {
+    background-color: #fff;
+    border: 1px solid #bcbcbc;
+    border-bottom: 0;
+    li {
+      display: list-item;
+      font-size: 12px;
+      border-bottom: 1px solid #bcbcbc;
+      a {
+
+        //  padding-left: 10px;
+      }
+    }
+  }
+  .other-stage {
+    color: black;
+    cursor: pointer;
+    background-color: white;
+    &:hover {
+      border-right: 0;
+      font-weight: normal;
+      background-color: #eee;
+    }
+  }
+
+  .future-stage {
+    color: #3a3a3a;
+    background-color: #dcdcdc;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Screens */
+  .opm-progress-screens {
+    background-color: white;
+    display: block;
+    li {
+      font-size: 10px;
+      border-bottom: 0;
+      padding-left: 10px;
+    }
+    a {
+      font-weight: normal;
+      padding-left: 10px;
+    }
+  }
+
+  .active-screen {
+    background: white;
+    color: black;
+    border-left: 4px solid #ffc037;
+  }
+
+  .inline {
+    padding-top:$gutter-half;
+  }
+
+  button{
+    background: transparent;
+    &.owd-submit{
+      background: transparent;
+    }
+    &[type=submit] {
+      @include button;
+      float: left;
+    }
+    &#back-button{
+      border:none;
+      outline:none;
+      background:#fff;
+      color:$link-colour;
+      text-decoration: underline;
+      &:hover{
+        color:$link-hover-colour;
+      }
+      &:focus{
+        border:3px solid $focus-colour;
+      }
     }
     &:focus{
-      border:3px solid $focus-colour;
+      outline:3px solid $focus-colour;
     }
   }
-  &:focus{
-    outline:3px solid $focus-colour;
+  input{
+    &[type=text]{
+      &:focus{
+        outline: 3px solid $focus-colour;
+      }
+    }
   }
-}
-input{
-  &[type=text]{
+  textarea{
+    overflow: auto;
+    max-width: 100%!important;
+    padding:$gutter-one-quarter;
+    resize: vertical;
     &:focus{
       outline: 3px solid $focus-colour;
     }
   }
-}
-textarea{
-  overflow: auto;
-  max-width: 100%!important;
-  padding:$gutter-one-quarter;
-  resize: vertical;
-  &:focus{
-    outline: 3px solid $focus-colour;
-  }
-}
-select{
-  outline:2px solid #fff;
-  border:1px solid $grey-1;
-  &:focus {
-    outline:2px solid $focus-colour;
-    border:1px solid $focus-colour;
+  select{
+    outline:2px solid #fff;
+    border:1px solid $grey-1;
+    &:focus {
+      outline:2px solid $focus-colour;
+      border:1px solid $focus-colour;
+    }
   }
 }

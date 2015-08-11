@@ -149,244 +149,221 @@
   font-weight: 700;
   font-style: normal; }
 
-.block-label.add-focus {
-  outline: 3px solid #ffbf47; }
-
-.block-label.selected {
-  background: #fff;
-  border-color: #0b0c0c; }
-
-.control {
-  padding-left: 29px; }
-
-#owdInterviewForm {
-  background-color: #fff; }
-
-/* Test OPA CSS for demo only */
-/* page tweaks */
-#content {
-  width: 600px;
-  float: left; }
-
-body {
+body.owd-has-js {
   background: white;
   margin-left: 100px; }
 
-h1,
-.Heading1 {
-  font-weight: 700;
-  font-style: normal; }
-
-h2,
-.Heading2 {
-  font-weight: 700;
-  font-style: normal; }
-
-h3,
-.Heading3 {
-  font-weight: 700;
-  font-style: normal; }
-
-h4,
-.Heading4 {
-  font-weight: 700;
-  font-style: normal; }
-
-h5,
-.Heading5 {
-  font-weight: 700;
-  font-style: normal; }
-
-h6,
-.Heading6 {
-  font-weight: 700;
-  font-style: normal; }
-
-.submit-break {
-  display: none; }
-
-.entity-instance-group {
-  background-color: #fff;
-  border-top: 1px solid black; }
-  .entity-instance-group .button-group {
-    font-size: small; }
-
-/* progress-stages */
-#progress-stages {
-  float: left;
-  margin-right: 10px;
-  width: 230px;
-  border: none; }
-  #progress-stages a {
-    display: block; }
-  #progress-stages li {
-    padding: 0;
-    display: list-item;
-    list-style-type: none;
-    word-break: break-all; }
-    #progress-stages li.order-stage {
-      padding-left: 10px; }
-    #progress-stages li.other-screen {
-      background: white;
-      color: black; }
-      #progress-stages li.other-screen:hover {
+.owd-has-js {
+  /* Test OPA CSS for demo only */
+  /* page tweaks */
+  /* progress-stages */
+  /* Screens */ }
+  .owd-has-js .block-label.add-focus {
+    outline: 3px solid #ffbf47; }
+  .owd-has-js .block-label.selected {
+    background: #fff;
+    border-color: #0b0c0c; }
+  .owd-has-js .control {
+    padding-left: 29px; }
+  .owd-has-js #owdInterviewForm {
+    background-color: #fff; }
+  .owd-has-js #content {
+    width: 600px;
+    float: left; }
+  .owd-has-js h1,
+  .owd-has-js .Heading1 {
+    font-weight: 700;
+    font-style: normal; }
+  .owd-has-js h2,
+  .owd-has-js .Heading2 {
+    font-weight: 700;
+    font-style: normal; }
+  .owd-has-js h3,
+  .owd-has-js .Heading3 {
+    font-weight: 700;
+    font-style: normal; }
+  .owd-has-js h4,
+  .owd-has-js .Heading4 {
+    font-weight: 700;
+    font-style: normal; }
+  .owd-has-js h5,
+  .owd-has-js .Heading5 {
+    font-weight: 700;
+    font-style: normal; }
+  .owd-has-js h6,
+  .owd-has-js .Heading6 {
+    font-weight: 700;
+    font-style: normal; }
+  .owd-has-js .submit-break {
+    display: none; }
+  .owd-has-js .entity-instance-group {
+    background-color: #fff;
+    border-top: 1px solid black; }
+    .owd-has-js .entity-instance-group .button-group {
+      font-size: small; }
+  .owd-has-js #progress-stages {
+    float: left;
+    margin-right: 10px;
+    width: 230px;
+    border: none; }
+    .owd-has-js #progress-stages a {
+      display: block; }
+    .owd-has-js #progress-stages li {
+      padding: 0;
+      display: list-item;
+      list-style-type: none;
+      word-break: break-all; }
+      .owd-has-js #progress-stages li.order-stage {
+        padding-left: 10px; }
+      .owd-has-js #progress-stages li.other-screen {
+        background: white;
+        color: black; }
+        .owd-has-js #progress-stages li.other-screen:hover {
+          font-weight: normal;
+          background-color: #eee; }
+      .owd-has-js #progress-stages li.active-stage {
+        color: black;
+        background: white;
+        border-right: 0;
         font-weight: normal;
-        background-color: #eee; }
-    #progress-stages li.active-stage {
-      color: black;
-      background: white;
+        padding-left: 0;
+        text-indent: 10px; }
+        .owd-has-js #progress-stages li.active-stage a {
+          text-indent: 0;
+          padding-left: 20px;
+          word-break: break-all; }
+        .owd-has-js #progress-stages li.active-stage .active-screen a {
+          padding-left: 16px; }
+  .owd-has-js .opa-responsive-stages {
+    margin-top: 0; }
+  .owd-has-js .opm-progress-stages {
+    background-color: #fff;
+    border: 1px solid #bcbcbc;
+    border-bottom: 0; }
+    .owd-has-js .opm-progress-stages li {
+      display: list-item;
+      font-size: 12px;
+      border-bottom: 1px solid #bcbcbc; }
+  .owd-has-js .other-stage {
+    color: black;
+    cursor: pointer;
+    background-color: white; }
+    .owd-has-js .other-stage:hover {
       border-right: 0;
       font-weight: normal;
-      padding-left: 0;
-      text-indent: 10px; }
-      #progress-stages li.active-stage a {
-        text-indent: 0;
-        padding-left: 20px;
-        word-break: break-all; }
-      #progress-stages li.active-stage .active-screen a {
-        padding-left: 16px; }
-
-.opa-responsive-stages {
-  margin-top: 0; }
-
-.opm-progress-stages {
-  background-color: #fff;
-  border: 1px solid #bcbcbc;
-  border-bottom: 0; }
-  .opm-progress-stages li {
-    display: list-item;
-    font-size: 12px;
-    border-bottom: 1px solid #bcbcbc; }
-
-.other-stage {
-  color: black;
-  cursor: pointer;
-  background-color: white; }
-  .other-stage:hover {
-    border-right: 0;
-    font-weight: normal;
-    background-color: #eee; }
-
-.future-stage {
-  color: #3a3a3a;
-  background-color: #dcdcdc;
-  padding-left: 10px;
-  padding-right: 10px; }
-
-/* Screens */
-.opm-progress-screens {
-  background-color: white;
-  display: block; }
-  .opm-progress-screens li {
-    font-size: 10px;
-    border-bottom: 0;
-    padding-left: 10px; }
-  .opm-progress-screens a {
-    font-weight: normal;
-    padding-left: 10px; }
-
-.active-screen {
-  background: white;
-  color: black;
-  border-left: 4px solid #ffc037; }
-
-.inline {
-  padding-top: 15px; }
-
-button {
-  background: transparent; }
-  button.owd-submit {
+      background-color: #eee; }
+  .owd-has-js .future-stage {
+    color: #3a3a3a;
+    background-color: #dcdcdc;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .owd-has-js .opm-progress-screens {
+    background-color: white;
+    display: block; }
+    .owd-has-js .opm-progress-screens li {
+      font-size: 10px;
+      border-bottom: 0;
+      padding-left: 10px; }
+    .owd-has-js .opm-progress-screens a {
+      font-weight: normal;
+      padding-left: 10px; }
+  .owd-has-js .active-screen {
+    background: white;
+    color: black;
+    border-left: 4px solid #ffc037; }
+  .owd-has-js .inline {
+    padding-top: 15px; }
+  .owd-has-js button {
     background: transparent; }
-  button[type=submit] {
-    background-color: #00823b;
-    position: relative;
-    display: -moz-inline-stack;
-    display: inline-block;
-    padding: 0.3em 0.6em 0.2em 0.6em;
-    border: none;
-    border-radius: 0;
-    -webkit-appearance: none;
-    box-shadow: 0 2px 0 #003518;
-    font-size: 1em;
-    line-height: 1.25;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
-    cursor: pointer;
-    color: #fff;
-    float: left; }
-    button[type=submit]:visited {
-      background-color: #00823b; }
-    button[type=submit]:hover,
-    button[type=submit]:focus {
-      background-color: #00692f; }
-    button[type=submit]:active {
-      top: 2px;
-      box-shadow: 0 0 0 #00823b; }
-    button[type=submit].disabled,
-    button[type=submit][disabled="disabled"],
-    button[type=submit][disabled] {
-      zoom: 1;
-      filter: alpha(opacity=50);
-      opacity: 0.5; }
-      button[type=submit].disabled:hover,
-      button[type=submit][disabled="disabled"]:hover,
-      button[type=submit][disabled]:hover {
-        cursor: default;
+    .owd-has-js button.owd-submit {
+      background: transparent; }
+    .owd-has-js button[type=submit] {
+      background-color: #00823b;
+      position: relative;
+      display: -moz-inline-stack;
+      display: inline-block;
+      padding: 0.3em 0.6em 0.2em 0.6em;
+      border: none;
+      border-radius: 0;
+      -webkit-appearance: none;
+      box-shadow: 0 2px 0 #003518;
+      font-size: 1em;
+      line-height: 1.25;
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      cursor: pointer;
+      color: #fff;
+      float: left; }
+      .owd-has-js button[type=submit]:visited {
         background-color: #00823b; }
-      button[type=submit].disabled:active,
-      button[type=submit][disabled="disabled"]:active,
-      button[type=submit][disabled]:active {
+      .owd-has-js button[type=submit]:hover,
+      .owd-has-js button[type=submit]:focus {
+        background-color: #00692f; }
+      .owd-has-js button[type=submit]:active {
+        top: 2px;
+        box-shadow: 0 0 0 #00823b; }
+      .owd-has-js button[type=submit].disabled,
+      .owd-has-js button[type=submit][disabled="disabled"],
+      .owd-has-js button[type=submit][disabled] {
+        zoom: 1;
+        filter: alpha(opacity=50);
+        opacity: 0.5; }
+        .owd-has-js button[type=submit].disabled:hover,
+        .owd-has-js button[type=submit][disabled="disabled"]:hover,
+        .owd-has-js button[type=submit][disabled]:hover {
+          cursor: default;
+          background-color: #00823b; }
+        .owd-has-js button[type=submit].disabled:active,
+        .owd-has-js button[type=submit][disabled="disabled"]:active,
+        .owd-has-js button[type=submit][disabled]:active {
+          top: 0;
+          box-shadow: 0 2px 0 #003518; }
+      .owd-has-js button[type=submit]:link,
+      .owd-has-js button[type=submit]:hover,
+      .owd-has-js button[type=submit]:focus,
+      .owd-has-js button[type=submit]:visited {
+        color: #fff; }
+      .owd-has-js button[type=submit]:before {
+        content: "";
+        height: 110%;
+        width: 100%;
+        display: block;
+        background: transparent;
+        position: absolute;
         top: 0;
-        box-shadow: 0 2px 0 #003518; }
-    button[type=submit]:link,
-    button[type=submit]:hover,
-    button[type=submit]:focus,
-    button[type=submit]:visited {
-      color: #fff; }
-    button[type=submit]:before {
-      content: "";
-      height: 110%;
-      width: 100%;
-      display: block;
-      background: transparent;
-      position: absolute;
-      top: 0;
-      left: 0; }
-    button[type=submit]:active:before {
-      top: -10%;
-      height: 120%; }
-    button[type=submit][rel="external"]:after {
-      display: none;
-      content: none;
-      margin-left: 0;
-      margin-right: 0; }
-  button#back-button {
-    border: none;
-    outline: none;
-    background: #fff;
-    color: #005ea5;
-    text-decoration: underline; }
-    button#back-button:hover {
-      color: #2e8aca; }
-    button#back-button:focus {
-      border: 3px solid #ffbf47; }
-  button:focus {
+        left: 0; }
+      .owd-has-js button[type=submit]:active:before {
+        top: -10%;
+        height: 120%; }
+      .owd-has-js button[type=submit][rel="external"]:after {
+        display: none;
+        content: none;
+        margin-left: 0;
+        margin-right: 0; }
+    .owd-has-js button#back-button {
+      border: none;
+      outline: none;
+      background: #fff;
+      color: #005ea5;
+      text-decoration: underline; }
+      .owd-has-js button#back-button:hover {
+        color: #2e8aca; }
+      .owd-has-js button#back-button:focus {
+        border: 3px solid #ffbf47; }
+    .owd-has-js button:focus {
+      outline: 3px solid #ffbf47; }
+  .owd-has-js input[type=text]:focus {
     outline: 3px solid #ffbf47; }
-
-input[type=text]:focus {
-  outline: 3px solid #ffbf47; }
-
-textarea {
-  overflow: auto;
-  max-width: 100% !important;
-  padding: 7.5px;
-  resize: vertical; }
-  textarea:focus {
-    outline: 3px solid #ffbf47; }
-
-select {
-  outline: 2px solid #fff;
-  border: 1px solid #6f777b; }
-  select:focus {
-    outline: 2px solid #ffbf47;
-    border: 1px solid #ffbf47; }
+  .owd-has-js textarea {
+    overflow: auto;
+    max-width: 100% !important;
+    padding: 7.5px;
+    resize: vertical; }
+    .owd-has-js textarea:focus {
+      outline: 3px solid #ffbf47; }
+  .owd-has-js select {
+    outline: 2px solid #fff;
+    border: 1px solid #6f777b; }
+    .owd-has-js select:focus {
+      outline: 2px solid #ffbf47;
+      border: 1px solid #ffbf47; }
