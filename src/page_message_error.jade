@@ -1,0 +1,747 @@
+//- index.jade
+extends ./partials/_layout.jade
+
+block title
+  title PUI Proceeding Inputs - Merits Assessment v12.1
+
+block content
+    #wrapper.opa-responsive-stages
+      #header(role='banner')
+        .header-image
+      #progress-stages(role='navigation')
+        .opm-progress-stages
+          ul
+            li.order-stage.active-stage
+              | PUI Inputs (For Testing Only)
+              .opm-progress-screens
+                ul
+                  li.order-screen.other-screen
+                    a(href='https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global')
+                      | PUI Global Input Screen
+                  li.order-screen.other-screen
+                    a(href='https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global')
+                      | PUI Other Party Inputs
+                  li.order-screen.active-screen
+                    a(href='https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global/qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global')
+                      | PUI Proceeding Inputs
+            li.order-stage.future-stage
+              | Case Overview
+            li.order-stage.future-stage
+              | ECF and LAR Details
+            li.order-stage.future-stage
+              | Inquest
+            li.order-stage.future-stage
+              | Case Details
+            li.order-stage.future-stage
+              | Proceeding Specific
+            li.order-stage.future-stage
+              | Criterion
+            li.order-stage.future-stage
+              | Statements
+            li.order-stage.future-stage
+              | Evidence
+            li.order-stage.future-stage
+              | Declarations
+            li.order-stage.future-stage
+              | Merits Assessment
+      #progress-stages-mobile
+        div
+          select#stages-select-mobile.active-stage
+            option.active-stage(value='0')
+              | PUI Inputs (For Testing Only)
+              .opm-progress-screens
+                ul
+                  li.order-screen.other-screen
+                    a(href='https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global')
+                      | PUI Global Input Screen
+                  li.order-screen.other-screen
+                    a(href='https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global')
+                      | PUI Other Party Inputs
+                  li.order-screen.active-screen
+                    a(href='https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global/qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global')
+                      | PUI Proceeding Inputs
+            .opm-progress-screens
+              ul
+                li.order-screen.other-screen
+                  a(href='https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global')
+                    | PUI Global Input Screen
+                li.order-screen.other-screen
+                  a(href='https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global')
+                    | PUI Other Party Inputs
+                li.order-screen.active-screen
+                  a(href='https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global/qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global')
+                    | PUI Proceeding Inputs
+        div
+          select#screen-select-mobile.active-screen
+            option.other-screen(value='0') PUI Global Input Screen
+            option.other-screen(value='1') PUI Other Party Inputs
+            option.active-screen(value='2') PUI Proceeding Inputs
+      #content(role='main')
+        form#owdInterviewForm(name='form', accept-charset='UTF-8', method='POST', action='https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global/qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global?ACS-IP-Address=194.74.186.235&ACS-Session-ID=95d8e0d2a78d343daa9f7fc66ec4234e', enctype='multipart/form-data', role='form')
+          h1.screen-title
+            | PUI Proceeding Inputs
+          #messages
+            p.error
+              | The proceedings applied for require a child to be entered. Please return to the Opponents and Other Parties section and enter the details of the child(ren) subject of proceedings.
+          #cd-global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7.control-item(style='width:100%;')
+            #msg-global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7.messages
+            div(role='grid', aria-label='the proceeding')
+              div(role='row', aria-label='the proceeding1')
+                .entity-instance-group.eig-odd
+                  .entity-instance-widget(role='gridcell')
+                    .button-group
+                      .buttons
+                        button#DELETEACTION_qsTEST_PUI_PROCEEDING_INPUTglobalglobal0.owd-remove(name='DELETEACTION_qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0', type='submit', value='clicked') Remove
+                  #cd-PROCEEDING_theproceeding1_a_NEW_OR_EXISTING.control-item(style='', role='gridcell')
+                    .question
+                      label#lbl-PROCEEDING_theproceeding1_a_NEW_OR_EXISTING What is the proceeding new or existing?
+                      img.mandatory(src='/web-determinations/staticresource/images/mandatory.png', style='', alt='This question is mandatory')
+                    .control
+                      select#PROCEEDING_theproceeding1_a_NEW_OR_EXISTING.owd-input.list-input(style='max-width:250px', name='PROCEEDING_the+proceeding1_a_NEW_OR_EXISTING', size='1', aria-invalid='false', aria-hidden='false', aria-disabled='false', aria-required='true', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_NEW_OR_EXISTING', aria-describedby='msg-PROCEEDING_theproceeding1_a_NEW_OR_EXISTING')
+                        option(value='')  
+                        option(selected='', value='NEW') NEW
+                        option(value='CHANGED') CHANGED
+                        option(value='UNCHANGED') UNCHANGED
+                    #msg-PROCEEDING_theproceeding1_a_NEW_OR_EXISTING.messages
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal1.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal1.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal1.owd-input.Normal
+                      | (NEW = A completely new proceeding added to the application (all proceedings on an initial application will be new); CHANGED= An existing proceeding on an existing application/certificate on which the Form of Service or Scope has been altered (This will only occur on amendment); UNCHANGED = An existing proceeding where the Form of Service or Scope have not been altered in any way on amendment)
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal2.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal2.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal2.owd-input.Normal .
+                  #cd-PROCEEDING_theproceeding1_a_PROCEEDING_ID.control-item(style='', role='gridcell')
+                    .question
+                      label#lbl-PROCEEDING_theproceeding1_a_PROCEEDING_ID What is the proceeding id?
+                      img.mandatory(src='/web-determinations/staticresource/images/mandatory.png', style='', alt='This question is mandatory')
+                    .control
+                      input#PROCEEDING_theproceeding1_a_PROCEEDING_ID.owd-input(type='text', style='max-width:250px', name='PROCEEDING_the+proceeding1_a_PROCEEDING_ID', value='1', size='35', aria-invalid='false', aria-hidden='false', aria-disabled='false', aria-required='true', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_PROCEEDING_ID', aria-describedby='msg-PROCEEDING_theproceeding1_a_PROCEEDING_ID')
+                    #msg-PROCEEDING_theproceeding1_a_PROCEEDING_ID.messages
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal3.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal3.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal3.owd-input.Normal (A number 1 to XX. i.e. 1st proc= 1, second proc= 2 etc)
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal4.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal4.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal4.owd-input.Normal .
+                  #cd-PROCEEDING_theproceeding1_a_MATTER_TYPE.control-item(style='', role='gridcell')
+                    .question
+                      label#lbl-PROCEEDING_theproceeding1_a_MATTER_TYPE What is the proceeding matter type code?
+                      img.mandatory(src='/web-determinations/staticresource/images/mandatory.png', style='', alt='This question is mandatory')
+                    .control
+                      input#PROCEEDING_theproceeding1_a_MATTER_TYPE.owd-input(type='text', style='max-width:250px', name='PROCEEDING_the+proceeding1_a_MATTER_TYPE', value='KPBLB', size='35', aria-invalid='false', aria-hidden='false', aria-disabled='false', aria-required='true', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_MATTER_TYPE', aria-describedby='msg-PROCEEDING_theproceeding1_a_MATTER_TYPE')
+                    #msg-PROCEEDING_theproceeding1_a_MATTER_TYPE.messages
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal5.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal5.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal5.owd-input.Normal
+                      | (Matter Type Code taken from Legal Framework relating to the proceeding for which funding is applied. Commonly used - KPBLW = Special Children Act; KPBLB - Public Law Family; KSEC8 = S8 Family; NHUSE = Housing (non family); IQ = Inquests)
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal6.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal6.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal6.owd-input.Normal .
+                  #cd-PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE.control-item(style='', role='gridcell')
+                    .question
+                      label#lbl-PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE What is the proceeding Form of Service (level of service) code?
+                      img.mandatory(src='/web-determinations/staticresource/images/mandatory.png', style='', alt='This question is mandatory')
+                    .control
+                      input#PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE.owd-input(type='text', style='max-width:250px', name='PROCEEDING_the+proceeding1_a_LEVEL_OF_SERVICE', value='3', size='35', aria-invalid='false', aria-hidden='false', aria-disabled='false', aria-required='true', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE', aria-describedby='msg-PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE')
+                    #msg-PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE.messages
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal7.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal7.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal7.owd-input.Normal
+                      | (Known as Form of Service from 01/04/2013) (Taken from the Legal Framework for the level of service under which the proceeding is to be conducted. 1 = Family Help (Higher) (Family Only); 2 = Investigative Help/Representation (Non-Family Only); 3 = Full Representation (Family & Non-family); 4 = Help with Mediation (Family Only); 5 = General Family Help (Family Only Legacy Cases); 6 = Inquest Full Representation)
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal8.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal8.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal8.owd-input.Normal .
+                  #cd-PROCEEDING_theproceeding1_a_PROCEEDING_NAME.control-item(style='', role='gridcell')
+                    .question
+                      label#lbl-PROCEEDING_theproceeding1_a_PROCEEDING_NAME What is the proceeding name?
+                      img.mandatory(src='/web-determinations/staticresource/images/mandatory.png', style='', alt='This question is mandatory')
+                    .control
+                      input#PROCEEDING_theproceeding1_a_PROCEEDING_NAME.owd-input(type='text', style='max-width:250px', name='PROCEEDING_the+proceeding1_a_PROCEEDING_NAME', value='PBM36', size='35', aria-invalid='false', aria-hidden='false', aria-disabled='false', aria-required='true', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_PROCEEDING_NAME', aria-describedby='msg-PROCEEDING_theproceeding1_a_PROCEEDING_NAME')
+                    #msg-PROCEEDING_theproceeding1_a_PROCEEDING_NAME.messages
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal9.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal9.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal9.owd-input.Normal
+                      | (Must be related to the Category of Law and Matter Type Selected. Commonly used: PB057 = Care Proceedings - SCA (non-means/non-merits tested); PBM36 = Care Proceedings - Public Law Family (means & merits tested); SE001 = S8 - Contact Proceedings (means & merits tested); HS072 = Recover Possession (Housing - Non-Family means & merits tested); IQ001 = Inquests (Death in Custody) - Inquests. Please refer to the Legal Framework Proceedings tab for further proceedings)
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal10.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal10.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal10.owd-input.Normal .
+                  #cd-PROCEEDING_theproceeding1_a_REQUESTED_SCOPE.control-item(style='', role='gridcell')
+                    .question
+                      label#lbl-PROCEEDING_theproceeding1_a_REQUESTED_SCOPE
+                        | (The code for the limitation applying to the specific proceeding applied for taken from the Legal Framework. Commonly used: FM062 = Final Hearing (fam/public law); FM059 = Family Help Higher - Children; CV021 = Mutual Exchange of Statements (non-family). These currently have no impact on the operation of the rule base and are gathered for reporting outputs only. For more scope limitations refer to the Scope Limitation tab in the Legal Framework.)
+                      img.mandatory(src='/web-determinations/staticresource/images/mandatory.png', style='', alt='This question is mandatory')
+                    .control
+                      input#PROCEEDING_theproceeding1_a_REQUESTED_SCOPE.owd-input(type='text', style='max-width:250px', name='PROCEEDING_the+proceeding1_a_REQUESTED_SCOPE', value='FM062 ', size='35', aria-invalid='false', aria-hidden='false', aria-disabled='false', aria-required='true', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_REQUESTED_SCOPE', aria-describedby='msg-PROCEEDING_theproceeding1_a_REQUESTED_SCOPE')
+                    #msg-PROCEEDING_theproceeding1_a_REQUESTED_SCOPE.messages
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal11.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal11.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal11.owd-input.Normal
+                      | (A = Applicant; D = Defendant; W = Subject of Proceedings (Child); Z = Joined Party; I = Intervenor; CD = Bring case & Defend Counterclaim; DC = Defend case & Counterclaim; IP = Interpleader; O = Other; PR = Personal Representative; DTP = Defend case and take 3rd party proceedings; AP = Appellant)
+                  #cd-PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE.control-item(style='', role='gridcell')
+                    .question
+                      label#lbl-PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE What is the client's involvement type for the proceeding?
+                      img.mandatory(src='/web-determinations/staticresource/images/mandatory.png', style='', alt='This question is mandatory')
+                    .control
+                      select#PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE.owd-input.list-input(style='max-width:250px', name='PROCEEDING_the+proceeding1_a_CLIENT_INVOLVEMENT_TYPE', size='1', aria-invalid='false', aria-hidden='false', aria-disabled='false', aria-required='true', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE', aria-describedby='msg-PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE')
+                        option(value='')  
+                        option(selected='', value='A') A
+                        option(value='D') D
+                        option(value='W') W
+                        option(value='Z') Z
+                        option(value='I') I
+                        option(value='CD') CD
+                        option(value='DC') DC
+                        option(value='IP') IP
+                        option(value='O') O
+                        option(value='PR') PR
+                        option(value='DTP') DTP
+                        option(value='AP') AP
+                    #msg-PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE.messages
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal12.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal12.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal12.owd-input.Normal .
+                  #cd-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULT.control-item(style='', role='gridcell')
+                    .question
+                      label#lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULT Is the proceeding default scope limitation default?
+                      img.mandatory(src='/web-determinations/staticresource/images/mandatory.png', style='', alt='This question is mandatory')
+                    .control
+                      .radio-group-boolean(role='radiogroup', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULT', aria-hidden='false', aria-disabled='false', aria-invalid='false', aria-required='true', aria-describedby='msg-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULT')
+                        fieldset.inline
+                          label#lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTt.block-label.selected(for='PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTt')
+                            input#PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTt.owd-input(type='radio', name='PROCEEDING_the+proceeding1_a_SCOPE_LIMIT_IS_DEFAULT', value='true', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTt', checked='')
+                            | Yes
+                          label#lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTf.block-label(for='PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTf')
+                            input#PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTf.owd-input(type='radio', name='PROCEEDING_the+proceeding1_a_SCOPE_LIMIT_IS_DEFAULT', value='false', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTf')
+                            | No
+                          input#PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTu.owd-input(type='radio', name='PROCEEDING_the+proceeding1_a_SCOPE_LIMIT_IS_DEFAULT', value='', style='display: none', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTu')
+                          label#lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTu(for='PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTu', style='display: none') Uncertain
+                    #msg-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULT.messages
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal13.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal13.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal13.owd-input.Normal
+                      | (Is the limitation selected by the provider the same as the default scope limitation. If you answer "no" to this an extra question will be triggered asking for justification why)
+                  #cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal14.control-item(style='', role='gridcell')
+                    #msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal14.messages
+                    #qsTEST_PUI_PROCEEDING_INPUTglobalglobal14.owd-input.Normal .
+                  #cd-PROCEEDING_theproceeding1_a_LEAD_PROCEEDING.control-item(style='', role='gridcell')
+                    .question
+                      label#lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDING Is the proceeding the lead proceeding?
+                      img.mandatory(src='/web-determinations/staticresource/images/mandatory.png', style='', alt='This question is mandatory')
+                    .control
+                      .radio-group-boolean(role='radiogroup', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDING', aria-hidden='false', aria-disabled='false', aria-invalid='false', aria-required='true', aria-describedby='msg-PROCEEDING_theproceeding1_a_LEAD_PROCEEDING')
+                        fieldset.inline
+                          label#lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGt.block-label.selected(for='PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGt')
+                            input#PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGt.owd-input(type='radio', name='PROCEEDING_the+proceeding1_a_LEAD_PROCEEDING', value='true', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGt', checked='')
+                            | Yes
+                          label#lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGf.block-label(for='PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGf')
+                            input#PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGf.owd-input(type='radio', name='PROCEEDING_the+proceeding1_a_LEAD_PROCEEDING', value='false', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGf')
+                            | No
+                          input#PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGu.owd-input(type='radio', name='PROCEEDING_the+proceeding1_a_LEAD_PROCEEDING', value='', style='display: none', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGu')
+                          label#lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGu(for='PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGu', style='display: none') Uncertain
+                    #msg-PROCEEDING_theproceeding1_a_LEAD_PROCEEDING.messages
+                  #cd-PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE.control-item(style='', role='gridcell')
+                    .question
+                      label#lbl-PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE What is the proceeding order type?
+                      img.mandatory(src='/web-determinations/staticresource/images/mandatory.png', style='display: none', alt='This question is mandatory')
+                    .control
+                      select#PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE.owd-input.list-input(style='max-width:250px', name='PROCEEDING_the+proceeding1_a_PROCEEDING_ORDER_TYPE', size='1', aria-invalid='false', aria-hidden='false', aria-disabled='false', aria-required='false', aria-labelledby='lbl-PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE', aria-describedby='msg-PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE')
+                        option(selected='', value='')  
+                        option(value='I') I
+                        option(value='F') F
+                    #msg-PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE.messages
+                  input(type='hidden', name='ENTITY_INSTANCE_global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7%5ethe+proceeding1', value='the proceeding1')
+              div(role='row', aria-label='')
+                .control-item(role='gridcell')
+                  .button-group
+                    .buttons.owd-buttons-right
+                      button#ADDACTION_global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7.owd-add(name='ADDACTION_global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7', type='submit', value='clicked') Add New Instance
+          #cd-form-buttons.control-item
+            .opm-submit-buttons
+              hr.submit-break
+              .button-spacer  
+              button#back-button.owd-back(name='back', type='button', value='clicked') Back
+              button#submit.owd-submit(name='submit', type='submit', value='clicked') Next
+          input(name='__DYNAMIC_CONTROL_STATE', type='hidden', value='true')
+  
+block pagejs    
+  script(type='text/javascript').
+    var fadeAnimation = {
+    fadeInDuration: 0,
+    fadeOutDuration: 0
+    };
+  script(src='/web-determinations/staticresource/js-global-utilities.js', type='text/javascript')
+  script(type='text/javascript').
+    var explanationParams = {
+    captionCollapseImage: "/owda/1/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/bullet_down.gif",
+    captionExpandImage: "/owda/1/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/bullet_right.gif",
+    nodeExpandImage: "/owda/1/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/ei-expand.gif",
+    nodeExpandAlt: "Click to expand node",
+    nodeCollapseImage:  "/owda/1/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/ei-collapse.gif",
+    nodeCollapseAlt: "Click to collapse node"
+    };
+    var searchingComboboxes = {
+    maxResults: 20,
+    moreResultsText: "...",
+    triggerTooltip: "Show all items"
+    };
+    var datePickerOpts = {
+    buttonImageOnly: "true",
+    dateFormat: "d/m/y",
+    showOn: "both",
+    buttonText:  "Click to open calendar",
+    buttonImage: "/owda/1/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/calendar.png",
+    dayNames: [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+    ],
+    dayNamesShort: [
+    "Sun",
+    "Mon",
+    "Tues",
+    "Wed",
+    "Thurs",
+    "Fri",
+    "Sat"
+    ],
+    dayNamesMin: [
+    "S",
+    "M",
+    "T",
+    "W",
+    "T",
+    "F",
+    "S"
+    ],
+    monthNames: [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+    ],
+    monthNamesShort: [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+    ]
+    };
+    var screenInfo = {
+    backButtonCaption: "Back",
+    backButtonURL: "/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
+    controls: [],
+    controlsByName: {},
+    controlsByType: function(controlType){
+    var matches = [];
+    for(var i = 0; i < screenInfo.controls.length; ++i ){
+    if(screenInfo.controls[i].type === controlType)
+    matches.push(screenInfo.controls[i]);
+    }
+    return matches;
+    },
+    hintTextControls: function(){
+    var matches = [];
+    for(var i = 0; i < screenInfo.controls.length; ++i ){
+    if(screenInfo.controls[i].hintText !== undefined)
+    matches.push(screenInfo.controls[i]);
+    }
+    }
+    };
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global",
+    name: "global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+    id: "global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+    type: "ContainmentRelationshipControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal0",
+    type: "EntityInstanceControlGroup",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Dropdown",
+    displayValue: "NEW",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "PROCEEDING_the+proceeding1_a_NEW_OR_EXISTING",
+    id: "PROCEEDING_theproceeding1_a_NEW_OR_EXISTING",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global1",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal1",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global2",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal2",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "TextBox",
+    displayValue: "1",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "PROCEEDING_the+proceeding1_a_PROCEEDING_ID",
+    id: "PROCEEDING_theproceeding1_a_PROCEEDING_ID",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global3",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal3",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global4",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal4",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "TextBox",
+    displayValue: "KPBLB",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "PROCEEDING_the+proceeding1_a_MATTER_TYPE",
+    id: "PROCEEDING_theproceeding1_a_MATTER_TYPE",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global5",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal5",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global6",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal6",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "TextBox",
+    displayValue: "3",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "PROCEEDING_the+proceeding1_a_LEVEL_OF_SERVICE",
+    id: "PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global7",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal7",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global8",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal8",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "TextBox",
+    displayValue: "PBM36",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "PROCEEDING_the+proceeding1_a_PROCEEDING_NAME",
+    id: "PROCEEDING_theproceeding1_a_PROCEEDING_NAME",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global9",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal9",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global10",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal10",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "TextBox",
+    displayValue: "FM062 ",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "PROCEEDING_the+proceeding1_a_REQUESTED_SCOPE",
+    id: "PROCEEDING_theproceeding1_a_REQUESTED_SCOPE",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global11",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal11",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Dropdown",
+    displayValue: "A",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "PROCEEDING_the+proceeding1_a_CLIENT_INVOLVEMENT_TYPE",
+    id: "PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global12",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal12",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Radiobutton",
+    displayValue: "true",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "PROCEEDING_the+proceeding1_a_SCOPE_LIMIT_IS_DEFAULT",
+    id: "PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULT",
+    type: "BooleanInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global13",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal13",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global14",
+    id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal14",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Radiobutton",
+    displayValue: "true",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "PROCEEDING_the+proceeding1_a_LEAD_PROCEEDING",
+    id: "PROCEEDING_theproceeding1_a_LEAD_PROCEEDING",
+    type: "BooleanInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Dropdown",
+    displayValue: "",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "PROCEEDING_the+proceeding1_a_PROCEEDING_ORDER_TYPE",
+    id: "PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE",
+    type: "TextInputControl",
+    state: "optional"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "",
+    id: "A",
+    type: "ButtonGroup",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    name: "DELETEACTION_qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+    id: "DELETEACTION_qsTEST_PUI_PROCEEDING_INPUTglobalglobal0",
+    type: "ButtonControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+    name: "buttons",
+    id: "buttons",
+    type: "ButtonGroup",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+    name: "ADDACTION_global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+    id: "ADDACTION_global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+    type: "ButtonControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global",
+    name: "form-buttons",
+    id: "form-buttons",
+    type: "ButtonGroup",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global",
+    name: "submit",
+    id: "submit",
+    type: "ButtonControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var unsubmittedDataWarning = {
+    isEnabled: "true".toLowerCase() === "true",
+    hasUnsubmitted: "true".toLowerCase() === "true",
+    warningMsg: "This screen may have data that has not been submitted."
+    };
+    var stageData = {
+    stages: [
+    { "url" : "", "text":"PUI Inputs (For Testing Only)", "kind":"active-stage" }
+    ,
+    { "url" : "", "text":"Case Overview", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"ECF and LAR Details", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Inquest", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Case Details", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Proceeding Specific", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Criterion", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Statements", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Evidence", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Declarations", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Merits Assessment", "kind":"future-stage" }
+    ],
+    screens: [
+    { "url" : "/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global", "text":"PUI Global Input Screen", "kind":"other-screen" }
+    ,
+    { "url" : "/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global", "text":"PUI Other Party Inputs", "kind":"other-screen" }
+    ,
+    { "url" : "/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global/qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global", "text":"PUI Proceeding Inputs", "kind":"active-screen" }
+    ]
+    };
+    var dataFormats = {
+    "bool": {
+    "trueVal": "Yes",
+    "falseVal": "No",
+    "uncertainVal": "Uncertain",
+    "unknownVal": "Unknown"
+    }
+    };
+    var dynamicControlStateEnabled = true;
+    var controlRules = [
+    ];
+  script(src='/web-determinations/staticresource/OPAControlStateEvaluator.js', type='text/javascript')
+  script(src='/web-determinations/staticresource/interview-screen-utilities.js', type='text/javascript')
+  script(src='/js/laa-ccms.min.js', type='text/javascript')
+  style#stylish-5.stylish(type='text/css').
+    .block-label input {
+    top: 15px;
+    left: 15px;
+    }
+    .block-label {
+    padding: 17px 23px 17px 37px;
+    width: 22px;
+    }

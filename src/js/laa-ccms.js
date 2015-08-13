@@ -1,12 +1,17 @@
 'use strict';
 
-var LAA = {};
+var OPM = {};
 
-LAA.fixUIgubbins = function () {
+OPM.styleHiddenContainers = function () {
+  var containers = $('.opm-container:hidden').addClass('opm-reveal');
+};
+
+OPM.moveNavItems = function () {
   $('.opm-progress-screens')
   .appendTo('.active-stage');
-  // $('.button-spacer, .submit-break').remove();
+};
 
+OPM.expandTextAreas = function () {
   $('textarea').each(function (i, el) {
     var textarea = $(el);
     textarea.keyup(function () {
@@ -18,14 +23,13 @@ LAA.fixUIgubbins = function () {
   });
 };
 
-LAA.moveSubmitButtons = function () {
-  var buttons = $('.opm-submit-buttons'),
-    form = $('#content');
-
-  buttons.appendTo(form);
+OPM.moveSubmitButtons = function () {
+  var back_button = $('#back-button');
+  back_button.clone().insertAfter('#submit');
+  back_button.remove();
 };
 
-LAA.toggleCheckedClass = function (input, label) {
+OPM.toggleCheckedClass = function (input, label) {
   var is_radio = input.is(':radio'),
     change_class = 'selected',
     focusblur_class = 'add-focus';
@@ -49,7 +53,7 @@ LAA.toggleCheckedClass = function (input, label) {
   .change();
 }
 
-LAA.buildGDScheckboxes = function () {
+OPM.buildGDScheckboxes = function () {
   var control = $('.control-checkbox');
 
   control.each(function (i, el) {
@@ -59,11 +63,11 @@ LAA.buildGDScheckboxes = function () {
       .addClass('block-label')
       .removeClass('question')
       .prepend(checkbox);
-    LAA.toggleCheckedClass(checkbox, label);
+    OPM.toggleCheckedClass(checkbox, label);
   });
 };
 
-LAA.buildGDSradios = function () {
+OPM.buildGDSradios = function () {
   var container = $('.radio-group-boolean').wrapInner('<fieldset class="inline"/>'),
     inputs = container.find('input:radio');
 
@@ -72,7 +76,7 @@ LAA.buildGDSradios = function () {
       label = container.find('label[for="'+ el.id +'"]')
       .addClass('block-label')
       .prepend(radio);
-    LAA.toggleCheckedClass(radio, label);
+    OPM.toggleCheckedClass(radio, label);
   });
 
 
@@ -80,12 +84,14 @@ LAA.buildGDSradios = function () {
 
 $(function () {
   $(document.documentElement).addClass('js-enabled laa-ccms');
+  OPM.moveSubmitButtons();
+  OPM.expandTextAreas();
+  OPM.moveNavItems();
+  OPM.styleHiddenContainers();
   if ($('.control-checkbox').length) {
-    LAA.buildGDScheckboxes();
+    OPM.buildGDScheckboxes();
   }
   if ($('.radio-group-boolean').length) {
-    LAA.buildGDSradios();
+    OPM.buildGDSradios();
   }
-  // LAA.moveSubmitButtons();
-  LAA.fixUIgubbins();
 });

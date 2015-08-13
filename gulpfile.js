@@ -3,15 +3,15 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
-var lost = require('lost');
 var jade = require('gulp-jade');
 var concat = require('gulp-concat');
 var livereload = require('gulp-livereload');
+var autoprefixer = require('autoprefixer');
+var lost = require('lost');
 var tinylr = require('tiny-lr');
 var express = require('express');
-var app = express();
 var path = require('path');
+var app = express();
 var server = tinylr();
 
 // --- Basic Tasks ---

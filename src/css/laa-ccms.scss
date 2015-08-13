@@ -60,8 +60,7 @@ body.owd-has-js {
     display: none;
   }
   .entity-instance-group {
-    background-color: #fff;
-    border-top: 1px solid black;
+    border-top: 1px solid #000;
     .button-group {
       font-size:small;
     }
@@ -161,7 +160,10 @@ body.owd-has-js {
       padding-left: 10px;
     }
   }
-
+  .opm-reveal > div {
+    border-left:5px solid $grey-2;
+    margin-left:$gutter;
+  }
   .active-screen {
     background: white;
     color: black;
@@ -170,6 +172,36 @@ body.owd-has-js {
 
   .inline {
     padding-top:$gutter-half;
+  }
+  .opm-submit-buttons{
+    overflow: hidden;
+    clear: both;
+    padding-bottom: $gutter*2;
+  }
+
+  .eig-odd{
+    background-color: #fff;
+  }
+  #messages {
+    border: 5px solid $error-colour;
+    margin: $gutter 0;
+    padding: $gutter;
+    p.error {
+      color:#000;
+      font-style: normal;
+      margin:0;
+      line-height: 1.4em;
+      font-weight:700;
+    }
+  }
+  .messages {
+    border-left: 5px solid $error-colour;
+    padding-left: $gutter-half;
+    p.error {
+      a {
+        font-weight:700;text-decoration: underline;color:$error-colour;
+      }
+    }
   }
 
   button{
@@ -181,10 +213,16 @@ body.owd-has-js {
       @include button;
       padding: 0.8em 1.6em;
       font-size:1.1em;
-      float: left;
+      &.owd-add{
+        @include button($colour: $grey-3);
+        padding: 0.8em 1.6em;
+        font-size:1.1em;
+      }
     }
-    &#back-button{
+    &#back-button,
+    &.owd-remove{
       border:3px solid #fff;
+      box-shadow:none;
       outline:none;
       background:#fff;
       color:$link-colour;
@@ -193,6 +231,7 @@ body.owd-has-js {
       font-size:1.1em;
       &:hover{
         color:$link-hover-colour;
+        background-color:#fff;
       }
       &:focus{
         border:3px solid $focus-colour;

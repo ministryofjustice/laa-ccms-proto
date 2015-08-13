@@ -202,8 +202,7 @@ body.owd-has-js {
   .owd-has-js .submit-break {
     display: none; }
   .owd-has-js .entity-instance-group {
-    background-color: #fff;
-    border-top: 1px solid black; }
+    border-top: 1px solid #000; }
     .owd-has-js .entity-instance-group .button-group {
       font-size: small; }
   .owd-has-js #progress-stages {
@@ -273,12 +272,38 @@ body.owd-has-js {
     .owd-has-js .opm-progress-screens a {
       font-weight: normal;
       padding-left: 10px; }
+  .owd-has-js .opm-reveal > div {
+    border-left: 5px solid #bfc1c3;
+    margin-left: 30px; }
   .owd-has-js .active-screen {
     background: white;
     color: black;
     border-left: 4px solid #ffc037; }
   .owd-has-js .inline {
     padding-top: 15px; }
+  .owd-has-js .opm-submit-buttons {
+    overflow: hidden;
+    clear: both;
+    padding-bottom: 60px; }
+  .owd-has-js .eig-odd {
+    background-color: #fff; }
+  .owd-has-js #messages {
+    border: 5px solid #b10e1e;
+    margin: 30px 0;
+    padding: 30px; }
+    .owd-has-js #messages p.error {
+      color: #000;
+      font-style: normal;
+      margin: 0;
+      line-height: 1.4em;
+      font-weight: 700; }
+  .owd-has-js .messages {
+    border-left: 5px solid #b10e1e;
+    padding-left: 15px; }
+    .owd-has-js .messages p.error a {
+      font-weight: 700;
+      text-decoration: underline;
+      color: #b10e1e; }
   .owd-has-js button {
     background: transparent; }
     .owd-has-js button.owd-submit {
@@ -300,8 +325,7 @@ body.owd-has-js {
       cursor: pointer;
       color: #fff;
       padding: 0.8em 1.6em;
-      font-size: 1.1em;
-      float: left; }
+      font-size: 1.1em; }
       .owd-has-js button[type=submit]:visited {
         background-color: #00823b; }
       .owd-has-js button[type=submit]:hover,
@@ -348,17 +372,86 @@ body.owd-has-js {
         content: none;
         margin-left: 0;
         margin-right: 0; }
-    .owd-has-js button#back-button {
+      .owd-has-js button[type=submit].owd-add {
+        background-color: #dee0e2;
+        position: relative;
+        display: -moz-inline-stack;
+        display: inline-block;
+        padding: 0.3em 0.6em 0.2em 0.6em;
+        border: none;
+        border-radius: 0;
+        -webkit-appearance: none;
+        box-shadow: 0 2px 0 #b5babe;
+        font-size: 1em;
+        line-height: 1.25;
+        text-decoration: none;
+        -webkit-font-smoothing: antialiased;
+        cursor: pointer;
+        color: #0b0c0c;
+        padding: 0.8em 1.6em;
+        font-size: 1.1em; }
+        .owd-has-js button[type=submit].owd-add:visited {
+          background-color: #dee0e2; }
+        .owd-has-js button[type=submit].owd-add:hover,
+        .owd-has-js button[type=submit].owd-add:focus {
+          background-color: #d0d3d6; }
+        .owd-has-js button[type=submit].owd-add:active {
+          top: 2px;
+          box-shadow: 0 0 0 #dee0e2; }
+        .owd-has-js button[type=submit].owd-add.disabled,
+        .owd-has-js button[type=submit].owd-add[disabled="disabled"],
+        .owd-has-js button[type=submit].owd-add[disabled] {
+          zoom: 1;
+          filter: alpha(opacity=50);
+          opacity: 0.5; }
+          .owd-has-js button[type=submit].owd-add.disabled:hover,
+          .owd-has-js button[type=submit].owd-add[disabled="disabled"]:hover,
+          .owd-has-js button[type=submit].owd-add[disabled]:hover {
+            cursor: default;
+            background-color: #dee0e2; }
+          .owd-has-js button[type=submit].owd-add.disabled:active,
+          .owd-has-js button[type=submit].owd-add[disabled="disabled"]:active,
+          .owd-has-js button[type=submit].owd-add[disabled]:active {
+            top: 0;
+            box-shadow: 0 2px 0 #b5babe; }
+        .owd-has-js button[type=submit].owd-add:link,
+        .owd-has-js button[type=submit].owd-add:hover,
+        .owd-has-js button[type=submit].owd-add:focus,
+        .owd-has-js button[type=submit].owd-add:visited {
+          color: #0b0c0c; }
+        .owd-has-js button[type=submit].owd-add:before {
+          content: "";
+          height: 110%;
+          width: 100%;
+          display: block;
+          background: transparent;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        .owd-has-js button[type=submit].owd-add:active:before {
+          top: -10%;
+          height: 120%; }
+        .owd-has-js button[type=submit].owd-add[rel="external"]:after {
+          display: none;
+          content: none;
+          margin-left: 0;
+          margin-right: 0; }
+    .owd-has-js button#back-button,
+    .owd-has-js button.owd-remove {
       border: 3px solid #fff;
+      box-shadow: none;
       outline: none;
       background: #fff;
       color: #005ea5;
       padding: 0.8em 1.6em;
       text-decoration: underline;
       font-size: 1.1em; }
-      .owd-has-js button#back-button:hover {
-        color: #2e8aca; }
-      .owd-has-js button#back-button:focus {
+      .owd-has-js button#back-button:hover,
+      .owd-has-js button.owd-remove:hover {
+        color: #2e8aca;
+        background-color: #fff; }
+      .owd-has-js button#back-button:focus,
+      .owd-has-js button.owd-remove:focus {
         border: 3px solid #ffbf47; }
     .owd-has-js button:focus {
       outline: 3px solid #ffbf47; }

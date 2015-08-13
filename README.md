@@ -1,1 +1,3 @@
-# LAA CCMS Frontend Prototype
+# LAA CCMS
+
+Amends for OPA interface.

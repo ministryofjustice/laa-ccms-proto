@@ -167,361 +167,361 @@ block content
             .button-spacer  
             button#back-button.owd-back(name='back', type='button', value='clicked') Back
             button#submit.owd-submit(name='submit', type='submit', value='clicked') Next
-  block pagejs
-    script(type='text/javascript').
-      var fadeAnimation = {
-      fadeInDuration: 0,
-      fadeOutDuration: 0
-      };
-    script(src='/web-determinations/staticresource/js-global-utilities.js', type='text/javascript')
-    script(type='text/javascript').
-      var explanationParams = {
-      captionCollapseImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/bullet_down.gif",
-      captionExpandImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/bullet_right.gif",
-      nodeExpandImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/ei-expand.gif",
-      nodeExpandAlt: "Click to expand node",
-      nodeCollapseImage:  "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/ei-collapse.gif",
-      nodeCollapseAlt: "Click to collapse node"
-      };
-      var searchingComboboxes = {
-      maxResults: 20,
-      moreResultsText: "...",
-      triggerTooltip: "Show all items"
-      };
-      var datePickerOpts = {
-      buttonImageOnly: "true",
-      dateFormat: "d/m/y",
-      showOn: "both",
-      buttonText:  "Click to open calendar",
-      buttonImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/calendar.png",
-      dayNames: [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-      ],
-      dayNamesShort: [
-      "Sun",
-      "Mon",
-      "Tues",
-      "Wed",
-      "Thurs",
-      "Fri",
-      "Sat"
-      ],
-      dayNamesMin: [
-      "S",
-      "M",
-      "T",
-      "W",
-      "T",
-      "F",
-      "S"
-      ],
-      monthNames: [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December"
-      ],
-      monthNamesShort: [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
-      ]
-      };
-      var screenInfo = {
-      backButtonCaption: "Back",
-      backButtonURL: "/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global",
-      controls: [],
-      controlsByName: {},
-      controlsByType: function(controlType){
-      var matches = [];
-      for(var i = 0; i < screenInfo.controls.length; ++i ){
-      if(screenInfo.controls[i].type === controlType)
-      matches.push(screenInfo.controls[i]);
-      }
-      return matches;
-      },
-      hintTextControls: function(){
-      var matches = [];
-      for(var i = 0; i < screenInfo.controls.length; ++i ){
-      if(screenInfo.controls[i].hintText !== undefined)
-      matches.push(screenInfo.controls[i]);
-      }
-      }
-      };
-      var ctrlInfo = {
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
-      name: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
-      id: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
-      type: "ContainmentRelationshipControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
-      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal0",
-      type: "EntityInstanceControlGroup",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      inputType: "TextBox",
-      displayValue: "1",
-      hasHintText: "false".toLowerCase() == "true",
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_ID",
-      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_ID",
-      type: "TextInputControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global1",
-      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal1",
-      type: "LabelControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global2",
-      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal2",
-      type: "LabelControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      inputType: "TextBox",
-      displayValue: "BOB",
-      hasHintText: "false".toLowerCase() == "true",
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_NAME",
-      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_NAME",
-      type: "TextInputControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      inputType: "Dropdown",
-      displayValue: "PERSON",
-      hasHintText: "false".toLowerCase() == "true",
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_TYPE",
-      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_TYPE",
-      type: "TextInputControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      inputType: "Dropdown",
-      displayValue: "OPP",
-      hasHintText: "false".toLowerCase() == "true",
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_RELATIONSHIP_TO_CASE",
-      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CASE",
-      type: "TextInputControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global3",
-      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal3",
-      type: "LabelControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global4",
-      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal4",
-      type: "LabelControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global5",
-      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal5",
-      type: "LabelControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      inputType: "Dropdown",
-      displayValue: "LOCAL AUTHORITY",
-      hasHintText: "false".toLowerCase() == "true",
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_RELATIONSHIP_TO_CLIENT",
-      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CLIENT",
-      type: "TextInputControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      inputType: "TextBox",
-      displayValue: "",
-      hasHintText: "false".toLowerCase() == "true",
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB",
-      id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OPPONENT_DOB",
-      type: "DateInputControl",
-      state: "optional"
-      };
-      ctrlInfo.dayVal = "";
-      ctrlInfo.monthVal = "";
-      ctrlInfo.yearVal = "";
-      ctrlInfo.name = "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
-      ctrlInfo.dayName = "day%3aOPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
-      ctrlInfo.monthName = "month%3aOPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
-      ctrlInfo.yearName = "year%3aOPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
-      ctrlInfo.readOnly = "false".toLowerCase() == "true";
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global6",
-      id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal6",
-      type: "LabelControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "",
-      id: "A",
-      type: "ButtonGroup",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      name: "DELETEACTION_qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
-      id: "DELETEACTION_qsTEST_PUI_OTHER_PTY_INPUTglobalglobal0",
-      type: "ButtonControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
-      name: "buttons",
-      id: "buttons",
-      type: "ButtonGroup",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
-      name: "ADDACTION_global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
-      id: "ADDACTION_global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
-      type: "ButtonControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
-      name: "form-buttons",
-      id: "form-buttons",
-      type: "ButtonGroup",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var ctrlInfo = {
-      parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
-      name: "submit",
-      id: "submit",
-      type: "ButtonControl",
-      state: "enabled"
-      };
-      screenInfo.controls.push(ctrlInfo);
-      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
-      var unsubmittedDataWarning = {
-      isEnabled: "false".toLowerCase() === "true",
-      hasUnsubmitted: "false".toLowerCase() === "true",
-      warningMsg: "This screen may have data that has not been submitted."
-      };
-      var stageData = {
-      stages: [
-      { "url" : "", "text":"PUI Inputs (For Testing Only)", "kind":"active-stage" }
-      ,
-      { "url" : "", "text":"Case Overview", "kind":"future-stage" }
-      ,
-      { "url" : "", "text":"ECF and LAR Details", "kind":"future-stage" }
-      ,
-      { "url" : "", "text":"Inquest", "kind":"future-stage" }
-      ,
-      { "url" : "", "text":"Case Details", "kind":"future-stage" }
-      ,
-      { "url" : "", "text":"Proceeding Specific", "kind":"future-stage" }
-      ,
-      { "url" : "", "text":"Criterion", "kind":"future-stage" }
-      ,
-      { "url" : "", "text":"Statements", "kind":"future-stage" }
-      ,
-      { "url" : "", "text":"Evidence", "kind":"future-stage" }
-      ,
-      { "url" : "", "text":"Declarations", "kind":"future-stage" }
-      ,
-      { "url" : "", "text":"Merits Assessment", "kind":"future-stage" }
-      ],
-      screens: [
-      { "url" : "/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global", "text":"PUI Global Input Screen", "kind":"other-screen" }
-      ,
-      { "url" : "/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global", "text":"PUI Other Party Inputs", "kind":"active-screen" }
-      ]
-      };
-      var dataFormats = {
-      "bool": {
-      "trueVal": "Yes",
-      "falseVal": "No",
-      "uncertainVal": "Uncertain",
-      "unknownVal": "Unknown"
-      }
-      };
-      var dynamicControlStateEnabled = true;
-      var controlRules = [
-      ];
+block pagejs
+  script(type='text/javascript').
+    var fadeAnimation = {
+    fadeInDuration: 0,
+    fadeOutDuration: 0
+    };
+  script(src='/web-determinations/staticresource/js-global-utilities.js', type='text/javascript')
+  script(type='text/javascript').
+    var explanationParams = {
+    captionCollapseImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/bullet_down.gif",
+    captionExpandImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/bullet_right.gif",
+    nodeExpandImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/ei-expand.gif",
+    nodeExpandAlt: "Click to expand node",
+    nodeCollapseImage:  "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/ei-collapse.gif",
+    nodeCollapseAlt: "Click to collapse node"
+    };
+    var searchingComboboxes = {
+    maxResults: 20,
+    moreResultsText: "...",
+    triggerTooltip: "Show all items"
+    };
+    var datePickerOpts = {
+    buttonImageOnly: "true",
+    dateFormat: "d/m/y",
+    showOn: "both",
+    buttonText:  "Click to open calendar",
+    buttonImage: "/web-determinations/635743377844523741/resource/Merits+Assessment+v12/en-GB/images/calendar.png",
+    dayNames: [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+    ],
+    dayNamesShort: [
+    "Sun",
+    "Mon",
+    "Tues",
+    "Wed",
+    "Thurs",
+    "Fri",
+    "Sat"
+    ],
+    dayNamesMin: [
+    "S",
+    "M",
+    "T",
+    "W",
+    "T",
+    "F",
+    "S"
+    ],
+    monthNames: [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+    ],
+    monthNamesShort: [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+    ]
+    };
+    var screenInfo = {
+    backButtonCaption: "Back",
+    backButtonURL: "/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global",
+    controls: [],
+    controlsByName: {},
+    controlsByType: function(controlType){
+    var matches = [];
+    for(var i = 0; i < screenInfo.controls.length; ++i ){
+    if(screenInfo.controls[i].type === controlType)
+    matches.push(screenInfo.controls[i]);
+    }
+    return matches;
+    },
+    hintTextControls: function(){
+    var matches = [];
+    for(var i = 0; i < screenInfo.controls.length; ++i ){
+    if(screenInfo.controls[i].hintText !== undefined)
+    matches.push(screenInfo.controls[i]);
+    }
+    }
+    };
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
+    name: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+    id: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+    type: "ContainmentRelationshipControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+    name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal0",
+    type: "EntityInstanceControlGroup",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "TextBox",
+    displayValue: "1",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_ID",
+    id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_ID",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global1",
+    id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal1",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global2",
+    id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal2",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "TextBox",
+    displayValue: "BOB",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_NAME",
+    id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_NAME",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Dropdown",
+    displayValue: "PERSON",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OTHER_PARTY_TYPE",
+    id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OTHER_PARTY_TYPE",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Dropdown",
+    displayValue: "OPP",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_RELATIONSHIP_TO_CASE",
+    id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CASE",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global3",
+    id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal3",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global4",
+    id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal4",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global5",
+    id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal5",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "Dropdown",
+    displayValue: "LOCAL AUTHORITY",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_RELATIONSHIP_TO_CLIENT",
+    id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_RELATIONSHIP_TO_CLIENT",
+    type: "TextInputControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    inputType: "TextBox",
+    displayValue: "",
+    hasHintText: "false".toLowerCase() == "true",
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB",
+    id: "OPPONENT_OTHER_PARTIES_theOpponentOtherParties1_a_OPPONENT_DOB",
+    type: "DateInputControl",
+    state: "optional"
+    };
+    ctrlInfo.dayVal = "";
+    ctrlInfo.monthVal = "";
+    ctrlInfo.yearVal = "";
+    ctrlInfo.name = "OPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
+    ctrlInfo.dayName = "day%3aOPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
+    ctrlInfo.monthName = "month%3aOPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
+    ctrlInfo.yearName = "year%3aOPPONENT_OTHER_PARTIES_the+Opponent+%26+Other+Parties1_a_OPPONENT_DOB";
+    ctrlInfo.readOnly = "false".toLowerCase() == "true";
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global6",
+    id: "qsTEST_PUI_OTHER_PTY_INPUTglobalglobal6",
+    type: "LabelControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "",
+    id: "A",
+    type: "ButtonGroup",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    name: "DELETEACTION_qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global0",
+    id: "DELETEACTION_qsTEST_PUI_OTHER_PTY_INPUTglobalglobal0",
+    type: "ButtonControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+    name: "buttons",
+    id: "buttons",
+    type: "ButtonGroup",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+    name: "ADDACTION_global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+    id: "ADDACTION_global_global_e_5558cc6e-7976-4b67-96e2-af4d69b7c0e1",
+    type: "ButtonControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
+    name: "form-buttons",
+    id: "form-buttons",
+    type: "ButtonGroup",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var ctrlInfo = {
+    parentCtrlId: "qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
+    name: "submit",
+    id: "submit",
+    type: "ButtonControl",
+    state: "enabled"
+    };
+    screenInfo.controls.push(ctrlInfo);
+    screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+    var unsubmittedDataWarning = {
+    isEnabled: "false".toLowerCase() === "true",
+    hasUnsubmitted: "false".toLowerCase() === "true",
+    warningMsg: "This screen may have data that has not been submitted."
+    };
+    var stageData = {
+    stages: [
+    { "url" : "", "text":"PUI Inputs (For Testing Only)", "kind":"active-stage" }
+    ,
+    { "url" : "", "text":"Case Overview", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"ECF and LAR Details", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Inquest", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Case Details", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Proceeding Specific", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Criterion", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Statements", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Evidence", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Declarations", "kind":"future-stage" }
+    ,
+    { "url" : "", "text":"Merits Assessment", "kind":"future-stage" }
+    ],
+    screens: [
+    { "url" : "/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global", "text":"PUI Global Input Screen", "kind":"other-screen" }
+    ,
+    { "url" : "/web-determinations/635743377844523741/investigate/Merits+Assessment+v12/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global", "text":"PUI Other Party Inputs", "kind":"active-screen" }
+    ]
+    };
+    var dataFormats = {
+    "bool": {
+    "trueVal": "Yes",
+    "falseVal": "No",
+    "uncertainVal": "Uncertain",
+    "unknownVal": "Unknown"
+    }
+    };
+    var dynamicControlStateEnabled = true;
+    var controlRules = [
+    ];
   script(src='/web-determinations/staticresource/OPAControlStateEvaluator.js', type='text/javascript')
   script(src='/web-determinations/staticresource/interview-screen-utilities.js', type='text/javascript')

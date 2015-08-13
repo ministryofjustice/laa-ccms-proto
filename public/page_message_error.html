@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PUI Proceeding Inputs - Merits Assessment v12.1</title>
+    <link rel="stylesheet" type="text/css" href="/web-determinations/staticresource/reset.css">
+    <link rel="stylesheet" type="text/css" href="/web-determinations/staticresource/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="/web-determinations/staticresource/jquery.ui.theme.css">
+    <link rel="stylesheet" type="text/css" href="/web-determinations/staticresource/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/laa-ccms.css">
+    <script src="/web-determinations/staticresource/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.core.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.widget.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.position.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.button.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.menu.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.autocomplete.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/jquery.ui.datepicker.min.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/custom-widgets.js" type="text/javascript"></script>
+  </head>
+  <body role="application">
+    <script type="text/javascript">
+      if (window.self !== window.top) {
+      jQuery("body").addClass("opm-frame");
+      }
+      jQuery("body").addClass("owd-has-js");
+    </script>
+    <div id="wrapper" class="opa-responsive-stages">
+      <div id="header" role="banner">
+        <div class="header-image"></div>
+      </div>
+      <div id="progress-stages" role="navigation">
+        <div class="opm-progress-stages">
+          <ul>
+            <li class="order-stage active-stage">PUI Inputs (For Testing Only)
+              <div class="opm-progress-screens">
+                <ul>
+                  <li class="order-screen other-screen"><a href="https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global">PUI Global Input Screen</a></li>
+                  <li class="order-screen other-screen"><a href="https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global">PUI Other Party Inputs</a></li>
+                  <li class="order-screen active-screen"><a href="https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global/qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global">PUI Proceeding Inputs</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="order-stage future-stage">Case Overview</li>
+            <li class="order-stage future-stage">ECF and LAR Details</li>
+            <li class="order-stage future-stage">Inquest</li>
+            <li class="order-stage future-stage">Case Details</li>
+            <li class="order-stage future-stage">Proceeding Specific</li>
+            <li class="order-stage future-stage">Criterion</li>
+            <li class="order-stage future-stage">Statements</li>
+            <li class="order-stage future-stage">Evidence</li>
+            <li class="order-stage future-stage">Declarations</li>
+            <li class="order-stage future-stage">Merits Assessment</li>
+          </ul>
+        </div>
+      </div>
+      <div id="progress-stages-mobile">
+        <div>
+          <select id="stages-select-mobile" class="active-stage">
+            <option value="0" class="active-stage">PUI Inputs (For Testing Only)
+              <div class="opm-progress-screens">
+                <ul>
+                  <li class="order-screen other-screen"><a href="https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global">PUI Global Input Screen</a></li>
+                  <li class="order-screen other-screen"><a href="https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global">PUI Other Party Inputs</a></li>
+                  <li class="order-screen active-screen"><a href="https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global/qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global">PUI Proceeding Inputs</a></li>
+                </ul>
+              </div>
+            </option>
+            <div class="opm-progress-screens">
+              <ul>
+                <li class="order-screen other-screen"><a href="https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global">PUI Global Input Screen</a></li>
+                <li class="order-screen other-screen"><a href="https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global">PUI Other Party Inputs</a></li>
+                <li class="order-screen active-screen"><a href="https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global/qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global">PUI Proceeding Inputs</a></li>
+              </ul>
+            </div>
+          </select>
+        </div>
+        <div>
+          <select id="screen-select-mobile" class="active-screen">
+            <option value="0" class="other-screen">PUI Global Input Screen</option>
+            <option value="1" class="other-screen">PUI Other Party Inputs</option>
+            <option value="2" class="active-screen">PUI Proceeding Inputs</option>
+          </select>
+        </div>
+      </div>
+      <div id="content" role="main">
+        <form id="owdInterviewForm" name="form" accept-charset="UTF-8" method="POST" action="https://ukgov-opa.rightnowdemo.com/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global/qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global?ACS-IP-Address=194.74.186.235&amp;ACS-Session-ID=95d8e0d2a78d343daa9f7fc66ec4234e" enctype="multipart/form-data" role="form">
+          <h1 class="screen-title">PUI Proceeding Inputs</h1>
+          <div id="messages">
+            <p class="error">The proceedings applied for require a child to be entered. Please return to the Opponents and Other Parties section and enter the details of the child(ren) subject of proceedings.</p>
+          </div>
+          <div id="cd-global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7" style="width:100%;" class="control-item">
+            <div id="msg-global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7" class="messages"></div>
+            <div role="grid" aria-label="the proceeding">
+              <div role="row" aria-label="the proceeding1">
+                <div class="entity-instance-group eig-odd">
+                  <div role="gridcell" class="entity-instance-widget">
+                    <div class="button-group">
+                      <div class="buttons">
+                        <button id="DELETEACTION_qsTEST_PUI_PROCEEDING_INPUTglobalglobal0" name="DELETEACTION_qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0" type="submit" value="clicked" class="owd-remove">Remove</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="cd-PROCEEDING_theproceeding1_a_NEW_OR_EXISTING" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-PROCEEDING_theproceeding1_a_NEW_OR_EXISTING">What is the proceeding new or existing?</label><img src="/web-determinations/staticresource/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <select id="PROCEEDING_theproceeding1_a_NEW_OR_EXISTING" style="max-width:250px" name="PROCEEDING_the+proceeding1_a_NEW_OR_EXISTING" size="1" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="true" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_NEW_OR_EXISTING" aria-describedby="msg-PROCEEDING_theproceeding1_a_NEW_OR_EXISTING" class="owd-input list-input">
+                        <option value=""> </option>
+                        <option selected="" value="NEW">NEW</option>
+                        <option value="CHANGED">CHANGED</option>
+                        <option value="UNCHANGED">UNCHANGED</option>
+                      </select>
+                    </div>
+                    <div id="msg-PROCEEDING_theproceeding1_a_NEW_OR_EXISTING" class="messages"></div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal1" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal1" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal1" class="owd-input Normal">(NEW = A completely new proceeding added to the application (all proceedings on an initial application will be new); CHANGED= An existing proceeding on an existing application/certificate on which the Form of Service or Scope has been altered (This will only occur on amendment); UNCHANGED = An existing proceeding where the Form of Service or Scope have not been altered in any way on amendment)</div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal2" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal2" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal2" class="owd-input Normal">.</div>
+                  </div>
+                  <div id="cd-PROCEEDING_theproceeding1_a_PROCEEDING_ID" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-PROCEEDING_theproceeding1_a_PROCEEDING_ID">What is the proceeding id?</label><img src="/web-determinations/staticresource/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <input id="PROCEEDING_theproceeding1_a_PROCEEDING_ID" type="text" style="max-width:250px" name="PROCEEDING_the+proceeding1_a_PROCEEDING_ID" value="1" size="35" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="true" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_PROCEEDING_ID" aria-describedby="msg-PROCEEDING_theproceeding1_a_PROCEEDING_ID" class="owd-input">
+                    </div>
+                    <div id="msg-PROCEEDING_theproceeding1_a_PROCEEDING_ID" class="messages"></div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal3" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal3" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal3" class="owd-input Normal">(A number 1 to XX. i.e. 1st proc= 1, second proc= 2 etc)</div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal4" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal4" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal4" class="owd-input Normal">.</div>
+                  </div>
+                  <div id="cd-PROCEEDING_theproceeding1_a_MATTER_TYPE" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-PROCEEDING_theproceeding1_a_MATTER_TYPE">What is the proceeding matter type code?</label><img src="/web-determinations/staticresource/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <input id="PROCEEDING_theproceeding1_a_MATTER_TYPE" type="text" style="max-width:250px" name="PROCEEDING_the+proceeding1_a_MATTER_TYPE" value="KPBLB" size="35" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="true" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_MATTER_TYPE" aria-describedby="msg-PROCEEDING_theproceeding1_a_MATTER_TYPE" class="owd-input">
+                    </div>
+                    <div id="msg-PROCEEDING_theproceeding1_a_MATTER_TYPE" class="messages"></div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal5" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal5" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal5" class="owd-input Normal">(Matter Type Code taken from Legal Framework relating to the proceeding for which funding is applied. Commonly used - KPBLW = Special Children Act; KPBLB - Public Law Family; KSEC8 = S8 Family; NHUSE = Housing (non family); IQ = Inquests)</div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal6" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal6" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal6" class="owd-input Normal">.</div>
+                  </div>
+                  <div id="cd-PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE">What is the proceeding Form of Service (level of service) code?</label><img src="/web-determinations/staticresource/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <input id="PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE" type="text" style="max-width:250px" name="PROCEEDING_the+proceeding1_a_LEVEL_OF_SERVICE" value="3" size="35" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="true" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE" aria-describedby="msg-PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE" class="owd-input">
+                    </div>
+                    <div id="msg-PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE" class="messages"></div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal7" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal7" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal7" class="owd-input Normal">(Known as Form of Service from 01/04/2013) (Taken from the Legal Framework for the level of service under which the proceeding is to be conducted. 1 = Family Help (Higher) (Family Only); 2 = Investigative Help/Representation (Non-Family Only); 3 = Full Representation (Family & Non-family); 4 = Help with Mediation (Family Only); 5 = General Family Help (Family Only Legacy Cases); 6 = Inquest Full Representation)</div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal8" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal8" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal8" class="owd-input Normal">.</div>
+                  </div>
+                  <div id="cd-PROCEEDING_theproceeding1_a_PROCEEDING_NAME" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-PROCEEDING_theproceeding1_a_PROCEEDING_NAME">What is the proceeding name?</label><img src="/web-determinations/staticresource/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <input id="PROCEEDING_theproceeding1_a_PROCEEDING_NAME" type="text" style="max-width:250px" name="PROCEEDING_the+proceeding1_a_PROCEEDING_NAME" value="PBM36" size="35" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="true" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_PROCEEDING_NAME" aria-describedby="msg-PROCEEDING_theproceeding1_a_PROCEEDING_NAME" class="owd-input">
+                    </div>
+                    <div id="msg-PROCEEDING_theproceeding1_a_PROCEEDING_NAME" class="messages"></div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal9" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal9" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal9" class="owd-input Normal">(Must be related to the Category of Law and Matter Type Selected. Commonly used: PB057 = Care Proceedings - SCA (non-means/non-merits tested); PBM36 = Care Proceedings - Public Law Family (means & merits tested); SE001 = S8 - Contact Proceedings (means & merits tested); HS072 = Recover Possession (Housing - Non-Family means & merits tested); IQ001 = Inquests (Death in Custody) - Inquests. Please refer to the Legal Framework Proceedings tab for further proceedings)</div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal10" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal10" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal10" class="owd-input Normal">.</div>
+                  </div>
+                  <div id="cd-PROCEEDING_theproceeding1_a_REQUESTED_SCOPE" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-PROCEEDING_theproceeding1_a_REQUESTED_SCOPE">(The code for the limitation applying to the specific proceeding applied for taken from the Legal Framework. Commonly used: FM062 = Final Hearing (fam/public law); FM059 = Family Help Higher - Children; CV021 = Mutual Exchange of Statements (non-family). These currently have no impact on the operation of the rule base and are gathered for reporting outputs only. For more scope limitations refer to the Scope Limitation tab in the Legal Framework.)</label><img src="/web-determinations/staticresource/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <input id="PROCEEDING_theproceeding1_a_REQUESTED_SCOPE" type="text" style="max-width:250px" name="PROCEEDING_the+proceeding1_a_REQUESTED_SCOPE" value="FM062 " size="35" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="true" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_REQUESTED_SCOPE" aria-describedby="msg-PROCEEDING_theproceeding1_a_REQUESTED_SCOPE" class="owd-input">
+                    </div>
+                    <div id="msg-PROCEEDING_theproceeding1_a_REQUESTED_SCOPE" class="messages"></div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal11" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal11" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal11" class="owd-input Normal">(A = Applicant; D = Defendant; W = Subject of Proceedings (Child); Z = Joined Party; I = Intervenor; CD = Bring case & Defend Counterclaim; DC = Defend case & Counterclaim; IP = Interpleader; O = Other; PR = Personal Representative; DTP = Defend case and take 3rd party proceedings; AP = Appellant)</div>
+                  </div>
+                  <div id="cd-PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE">What is the client's involvement type for the proceeding?</label><img src="/web-determinations/staticresource/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <select id="PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE" style="max-width:250px" name="PROCEEDING_the+proceeding1_a_CLIENT_INVOLVEMENT_TYPE" size="1" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="true" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE" aria-describedby="msg-PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE" class="owd-input list-input">
+                        <option value=""> </option>
+                        <option selected="" value="A">A</option>
+                        <option value="D">D</option>
+                        <option value="W">W</option>
+                        <option value="Z">Z</option>
+                        <option value="I">I</option>
+                        <option value="CD">CD</option>
+                        <option value="DC">DC</option>
+                        <option value="IP">IP</option>
+                        <option value="O">O</option>
+                        <option value="PR">PR</option>
+                        <option value="DTP">DTP</option>
+                        <option value="AP">AP</option>
+                      </select>
+                    </div>
+                    <div id="msg-PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE" class="messages"></div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal12" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal12" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal12" class="owd-input Normal">.</div>
+                  </div>
+                  <div id="cd-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULT" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULT">Is the proceeding default scope limitation default?</label><img src="/web-determinations/staticresource/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <div role="radiogroup" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULT" aria-hidden="false" aria-disabled="false" aria-invalid="false" aria-required="true" aria-describedby="msg-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULT" class="radio-group-boolean">
+                        <fieldset class="inline">
+                          <label id="lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTt" for="PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTt" class="block-label selected">
+                            <input id="PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTt" type="radio" name="PROCEEDING_the+proceeding1_a_SCOPE_LIMIT_IS_DEFAULT" value="true" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTt" checked="" class="owd-input">Yes
+                          </label>
+                          <label id="lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTf" for="PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTf" class="block-label">
+                            <input id="PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTf" type="radio" name="PROCEEDING_the+proceeding1_a_SCOPE_LIMIT_IS_DEFAULT" value="false" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTf" class="owd-input">No
+                          </label>
+                          <input id="PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTu" type="radio" name="PROCEEDING_the+proceeding1_a_SCOPE_LIMIT_IS_DEFAULT" value="" style="display: none" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTu" class="owd-input">
+                          <label id="lbl-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTu" for="PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULTu" style="display: none">Uncertain</label>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div id="msg-PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULT" class="messages"></div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal13" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal13" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal13" class="owd-input Normal">(Is the limitation selected by the provider the same as the default scope limitation. If you answer "no" to this an extra question will be triggered asking for justification why)</div>
+                  </div>
+                  <div id="cd-qsTEST_PUI_PROCEEDING_INPUTglobalglobal14" style="" role="gridcell" class="control-item">
+                    <div id="msg-qsTEST_PUI_PROCEEDING_INPUTglobalglobal14" class="messages"></div>
+                    <div id="qsTEST_PUI_PROCEEDING_INPUTglobalglobal14" class="owd-input Normal">.</div>
+                  </div>
+                  <div id="cd-PROCEEDING_theproceeding1_a_LEAD_PROCEEDING" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDING">Is the proceeding the lead proceeding?</label><img src="/web-determinations/staticresource/images/mandatory.png" style="" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <div role="radiogroup" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDING" aria-hidden="false" aria-disabled="false" aria-invalid="false" aria-required="true" aria-describedby="msg-PROCEEDING_theproceeding1_a_LEAD_PROCEEDING" class="radio-group-boolean">
+                        <fieldset class="inline">
+                          <label id="lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGt" for="PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGt" class="block-label selected">
+                            <input id="PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGt" type="radio" name="PROCEEDING_the+proceeding1_a_LEAD_PROCEEDING" value="true" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGt" checked="" class="owd-input">Yes
+                          </label>
+                          <label id="lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGf" for="PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGf" class="block-label">
+                            <input id="PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGf" type="radio" name="PROCEEDING_the+proceeding1_a_LEAD_PROCEEDING" value="false" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGf" class="owd-input">No
+                          </label>
+                          <input id="PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGu" type="radio" name="PROCEEDING_the+proceeding1_a_LEAD_PROCEEDING" value="" style="display: none" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGu" class="owd-input">
+                          <label id="lbl-PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGu" for="PROCEEDING_theproceeding1_a_LEAD_PROCEEDINGu" style="display: none">Uncertain</label>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div id="msg-PROCEEDING_theproceeding1_a_LEAD_PROCEEDING" class="messages"></div>
+                  </div>
+                  <div id="cd-PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE" style="" role="gridcell" class="control-item">
+                    <div class="question">
+                      <label id="lbl-PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE">What is the proceeding order type?</label><img src="/web-determinations/staticresource/images/mandatory.png" style="display: none" alt="This question is mandatory" class="mandatory">
+                    </div>
+                    <div class="control">
+                      <select id="PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE" style="max-width:250px" name="PROCEEDING_the+proceeding1_a_PROCEEDING_ORDER_TYPE" size="1" aria-invalid="false" aria-hidden="false" aria-disabled="false" aria-required="false" aria-labelledby="lbl-PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE" aria-describedby="msg-PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE" class="owd-input list-input">
+                        <option selected="" value=""> </option>
+                        <option value="I">I</option>
+                        <option value="F">F</option>
+                      </select>
+                    </div>
+                    <div id="msg-PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE" class="messages"></div>
+                  </div>
+                  <input type="hidden" name="ENTITY_INSTANCE_global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7%5ethe+proceeding1" value="the proceeding1">
+                </div>
+              </div>
+              <div role="row" aria-label="">
+                <div role="gridcell" class="control-item">
+                  <div class="button-group">
+                    <div class="buttons owd-buttons-right">
+                      <button id="ADDACTION_global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7" name="ADDACTION_global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7" type="submit" value="clicked" class="owd-add">Add New Instance</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="cd-form-buttons" class="control-item">
+            <div class="opm-submit-buttons">
+              <hr class="submit-break">
+              <div class="button-spacer"> </div>
+              <button id="back-button" name="back" type="button" value="clicked" class="owd-back">Back</button>
+              <button id="submit" name="submit" type="submit" value="clicked" class="owd-submit">Next</button>
+            </div>
+          </div>
+          <input name="__DYNAMIC_CONTROL_STATE" type="hidden" value="true">
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var fadeAnimation = {
+      fadeInDuration: 0,
+      fadeOutDuration: 0
+      };
+    </script>
+    <script src="/web-determinations/staticresource/js-global-utilities.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var explanationParams = {
+      captionCollapseImage: "/owda/1/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/bullet_down.gif",
+      captionExpandImage: "/owda/1/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/bullet_right.gif",
+      nodeExpandImage: "/owda/1/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/ei-expand.gif",
+      nodeExpandAlt: "Click to expand node",
+      nodeCollapseImage:  "/owda/1/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/ei-collapse.gif",
+      nodeCollapseAlt: "Click to collapse node"
+      };
+      var searchingComboboxes = {
+      maxResults: 20,
+      moreResultsText: "...",
+      triggerTooltip: "Show all items"
+      };
+      var datePickerOpts = {
+      buttonImageOnly: "true",
+      dateFormat: "d/m/y",
+      showOn: "both",
+      buttonText:  "Click to open calendar",
+      buttonImage: "/owda/1/resource/Merits+Assessment+v12.1+DVUX5/en-GB/images/calendar.png",
+      dayNames: [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+      ],
+      dayNamesShort: [
+      "Sun",
+      "Mon",
+      "Tues",
+      "Wed",
+      "Thurs",
+      "Fri",
+      "Sat"
+      ],
+      dayNamesMin: [
+      "S",
+      "M",
+      "T",
+      "W",
+      "T",
+      "F",
+      "S"
+      ],
+      monthNames: [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+      ],
+      monthNamesShort: [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+      ]
+      };
+      var screenInfo = {
+      backButtonCaption: "Back",
+      backButtonURL: "/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global",
+      controls: [],
+      controlsByName: {},
+      controlsByType: function(controlType){
+      var matches = [];
+      for(var i = 0; i < screenInfo.controls.length; ++i ){
+      if(screenInfo.controls[i].type === controlType)
+      matches.push(screenInfo.controls[i]);
+      }
+      return matches;
+      },
+      hintTextControls: function(){
+      var matches = [];
+      for(var i = 0; i < screenInfo.controls.length; ++i ){
+      if(screenInfo.controls[i].hintText !== undefined)
+      matches.push(screenInfo.controls[i]);
+      }
+      }
+      };
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global",
+      name: "global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+      id: "global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+      type: "ContainmentRelationshipControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal0",
+      type: "EntityInstanceControlGroup",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "Dropdown",
+      displayValue: "NEW",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "PROCEEDING_the+proceeding1_a_NEW_OR_EXISTING",
+      id: "PROCEEDING_theproceeding1_a_NEW_OR_EXISTING",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global1",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal1",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global2",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal2",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "TextBox",
+      displayValue: "1",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "PROCEEDING_the+proceeding1_a_PROCEEDING_ID",
+      id: "PROCEEDING_theproceeding1_a_PROCEEDING_ID",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global3",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal3",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global4",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal4",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "TextBox",
+      displayValue: "KPBLB",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "PROCEEDING_the+proceeding1_a_MATTER_TYPE",
+      id: "PROCEEDING_theproceeding1_a_MATTER_TYPE",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global5",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal5",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global6",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal6",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "TextBox",
+      displayValue: "3",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "PROCEEDING_the+proceeding1_a_LEVEL_OF_SERVICE",
+      id: "PROCEEDING_theproceeding1_a_LEVEL_OF_SERVICE",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global7",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal7",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global8",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal8",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "TextBox",
+      displayValue: "PBM36",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "PROCEEDING_the+proceeding1_a_PROCEEDING_NAME",
+      id: "PROCEEDING_theproceeding1_a_PROCEEDING_NAME",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global9",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal9",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global10",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal10",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "TextBox",
+      displayValue: "FM062 ",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "PROCEEDING_the+proceeding1_a_REQUESTED_SCOPE",
+      id: "PROCEEDING_theproceeding1_a_REQUESTED_SCOPE",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global11",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal11",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "Dropdown",
+      displayValue: "A",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "PROCEEDING_the+proceeding1_a_CLIENT_INVOLVEMENT_TYPE",
+      id: "PROCEEDING_theproceeding1_a_CLIENT_INVOLVEMENT_TYPE",
+      type: "TextInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global12",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal12",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "Radiobutton",
+      displayValue: "true",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "PROCEEDING_the+proceeding1_a_SCOPE_LIMIT_IS_DEFAULT",
+      id: "PROCEEDING_theproceeding1_a_SCOPE_LIMIT_IS_DEFAULT",
+      type: "BooleanInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global13",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal13",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global14",
+      id: "qsTEST_PUI_PROCEEDING_INPUTglobalglobal14",
+      type: "LabelControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "Radiobutton",
+      displayValue: "true",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "PROCEEDING_the+proceeding1_a_LEAD_PROCEEDING",
+      id: "PROCEEDING_theproceeding1_a_LEAD_PROCEEDING",
+      type: "BooleanInputControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      inputType: "Dropdown",
+      displayValue: "",
+      hasHintText: "false".toLowerCase() == "true",
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "PROCEEDING_the+proceeding1_a_PROCEEDING_ORDER_TYPE",
+      id: "PROCEEDING_theproceeding1_a_PROCEEDING_ORDER_TYPE",
+      type: "TextInputControl",
+      state: "optional"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "",
+      id: "A",
+      type: "ButtonGroup",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      name: "DELETEACTION_qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global0",
+      id: "DELETEACTION_qsTEST_PUI_PROCEEDING_INPUTglobalglobal0",
+      type: "ButtonControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+      name: "buttons",
+      id: "buttons",
+      type: "ButtonGroup",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+      name: "ADDACTION_global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+      id: "ADDACTION_global_global_e_fafe933f-64d9-4203-a23b-012e6baa8ec7",
+      type: "ButtonControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global",
+      name: "form-buttons",
+      id: "form-buttons",
+      type: "ButtonGroup",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var ctrlInfo = {
+      parentCtrlId: "qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global",
+      name: "submit",
+      id: "submit",
+      type: "ButtonControl",
+      state: "enabled"
+      };
+      screenInfo.controls.push(ctrlInfo);
+      screenInfo.controlsByName[ctrlInfo.name] = ctrlInfo;
+      var unsubmittedDataWarning = {
+      isEnabled: "true".toLowerCase() === "true",
+      hasUnsubmitted: "true".toLowerCase() === "true",
+      warningMsg: "This screen may have data that has not been submitted."
+      };
+      var stageData = {
+      stages: [
+      { "url" : "", "text":"PUI Inputs (For Testing Only)", "kind":"active-stage" }
+      ,
+      { "url" : "", "text":"Case Overview", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"ECF and LAR Details", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Inquest", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Case Details", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Proceeding Specific", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Criterion", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Statements", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Evidence", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Declarations", "kind":"future-stage" }
+      ,
+      { "url" : "", "text":"Merits Assessment", "kind":"future-stage" }
+      ],
+      screens: [
+      { "url" : "/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_GLOBAL_INPUT%24global%24global/qs%24TEST_PUI_GLOBAL_INPUT%24global%24global", "text":"PUI Global Input Screen", "kind":"other-screen" }
+      ,
+      { "url" : "/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global/qs%24TEST_PUI_OTHER_PTY_INPUT%24global%24global", "text":"PUI Other Party Inputs", "kind":"other-screen" }
+      ,
+      { "url" : "/owda/1/investigate/Merits+Assessment+v12.1+DVUX5/en-GB/ScreenOrder~Main~qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global/qs%24TEST_PUI_PROCEEDING_INPUT%24global%24global", "text":"PUI Proceeding Inputs", "kind":"active-screen" }
+      ]
+      };
+      var dataFormats = {
+      "bool": {
+      "trueVal": "Yes",
+      "falseVal": "No",
+      "uncertainVal": "Uncertain",
+      "unknownVal": "Unknown"
+      }
+      };
+      var dynamicControlStateEnabled = true;
+      var controlRules = [
+      ];
+    </script>
+    <script src="/web-determinations/staticresource/OPAControlStateEvaluator.js" type="text/javascript"></script>
+    <script src="/web-determinations/staticresource/interview-screen-utilities.js" type="text/javascript"></script>
+    <script src="/js/laa-ccms.min.js" type="text/javascript"></script>
+    <style id="stylish-5" type="text/css" class="stylish">
+      .block-label input {
+      top: 15px;
+      left: 15px;
+      }
+      .block-label {
+      padding: 17px 23px 17px 37px;
+      width: 22px;
+      }
+    </style>
+    <script src="/js/laa-ccms.min.js" type="text/javascript"></script>
+  </body>
+</html>
