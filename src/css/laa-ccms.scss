@@ -37,8 +37,7 @@ body.owd-has-js {
   }
 
   //********************* USE THE FORCE LUKE! ***********************************
-  /* Test OPA CSS for demo only */
-  /* page tweaks */
+
   #content {
     width: 600px;
     float: left;
@@ -197,11 +196,39 @@ body.owd-has-js {
   .messages {
     border-left: 5px solid $error-colour;
     padding-left: $gutter-half;
+    margin-left: $gutter-half;
     p.error {
+      font-style: normal;
+      font-weight: 700;
+      color:$error-colour;
       a {
         font-weight:700;text-decoration: underline;color:$error-colour;
       }
     }
+  }
+
+  .help-title {
+    color:$link-colour;
+    cursor: pointer;
+    font-size:0.8em;
+    .summary{
+      text-decoration: underline;
+      font-weight:400;
+    }
+    &:before{
+      content: '▶ ';
+    }
+    &.active:before{
+      content: '▼ ';
+    }
+  }
+  .help-content{
+    border-left: 5px solid $grey-2;
+    padding-left:$gutter-half;
+  }
+  .help-content-container {
+    display: none;
+    margin-bottom:$gutter-half;
   }
 
   button{
@@ -211,7 +238,7 @@ body.owd-has-js {
     }
     &[type=submit] {
       @include button;
-      padding: 0.8em 1.6em;
+      padding: 0.6em 1.6em;
       font-size:1.1em;
       &.owd-add{
         @include button($colour: $grey-3);
@@ -226,7 +253,6 @@ body.owd-has-js {
       outline:none;
       background:#fff;
       color:$link-colour;
-      padding: 0.8em 1.6em;
       text-decoration: underline;
       font-size:1.1em;
       &:hover{
@@ -234,11 +260,9 @@ body.owd-has-js {
         background-color:#fff;
       }
       &:focus{
-        border:3px solid $focus-colour;
+        color:$link-hover-colour;
+        background-color:$focus-colour;
       }
-    }
-    &:focus{
-      outline:3px solid $focus-colour;
     }
   }
   input{
@@ -262,6 +286,7 @@ body.owd-has-js {
     outline:2px solid #fff;
     border:1px solid $grey-1;
     padding:$gutter-one-quarter;
+    height:$gutter;
     &:focus {
       outline:2px solid $focus-colour;
       border:1px solid $focus-colour;

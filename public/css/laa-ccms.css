@@ -154,8 +154,6 @@ body.owd-has-js {
   margin-left: 100px; }
 
 .owd-has-js {
-  /* Test OPA CSS for demo only */
-  /* page tweaks */
   /* progress-stages */
   /* Screens */ }
   .owd-has-js .block-label.add-focus {
@@ -299,11 +297,33 @@ body.owd-has-js {
       font-weight: 700; }
   .owd-has-js .messages {
     border-left: 5px solid #b10e1e;
-    padding-left: 15px; }
-    .owd-has-js .messages p.error a {
+    padding-left: 15px;
+    margin-left: 15px; }
+    .owd-has-js .messages p.error {
+      font-style: normal;
       font-weight: 700;
-      text-decoration: underline;
       color: #b10e1e; }
+      .owd-has-js .messages p.error a {
+        font-weight: 700;
+        text-decoration: underline;
+        color: #b10e1e; }
+  .owd-has-js .help-title {
+    color: #005ea5;
+    cursor: pointer;
+    font-size: 0.8em; }
+    .owd-has-js .help-title .summary {
+      text-decoration: underline;
+      font-weight: 400; }
+    .owd-has-js .help-title:before {
+      content: '▶ '; }
+    .owd-has-js .help-title.active:before {
+      content: '▼ '; }
+  .owd-has-js .help-content {
+    border-left: 5px solid #bfc1c3;
+    padding-left: 15px; }
+  .owd-has-js .help-content-container {
+    display: none;
+    margin-bottom: 15px; }
   .owd-has-js button {
     background: transparent; }
     .owd-has-js button.owd-submit {
@@ -324,7 +344,7 @@ body.owd-has-js {
       -webkit-font-smoothing: antialiased;
       cursor: pointer;
       color: #fff;
-      padding: 0.8em 1.6em;
+      padding: 0.6em 1.6em;
       font-size: 1.1em; }
       .owd-has-js button[type=submit]:visited {
         background-color: #00823b; }
@@ -443,7 +463,6 @@ body.owd-has-js {
       outline: none;
       background: #fff;
       color: #005ea5;
-      padding: 0.8em 1.6em;
       text-decoration: underline;
       font-size: 1.1em; }
       .owd-has-js button#back-button:hover,
@@ -452,9 +471,8 @@ body.owd-has-js {
         background-color: #fff; }
       .owd-has-js button#back-button:focus,
       .owd-has-js button.owd-remove:focus {
-        border: 3px solid #ffbf47; }
-    .owd-has-js button:focus {
-      outline: 3px solid #ffbf47; }
+        color: #2e8aca;
+        background-color: #ffbf47; }
   .owd-has-js input[type=text] {
     padding: 7.5px; }
     .owd-has-js input[type=text]:focus {
@@ -469,7 +487,8 @@ body.owd-has-js {
   .owd-has-js select {
     outline: 2px solid #fff;
     border: 1px solid #6f777b;
-    padding: 7.5px; }
+    padding: 7.5px;
+    height: 30px; }
     .owd-has-js select:focus {
       outline: 2px solid #ffbf47;
       border: 1px solid #ffbf47; }

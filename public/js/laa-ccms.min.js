@@ -82,6 +82,20 @@ OPM.buildGDSradios = function () {
 
 }
 
+OPM.helpPrompt = function () {
+  var title = $('.help-title');
+  title.each(function (i, el) {
+    var title = $(el).wrapInner('<span class="summary"/>'),
+      title_container = title.closest('.control-item').addClass('help-title-container'),
+      content = title_container.next('.control-item').addClass('help-content-container');
+
+    title.on('click', function () {
+      content.toggle();
+      $(el).toggleClass('active');
+    });
+  });
+}
+
 $(function () {
   $(document.documentElement).addClass('js-enabled laa-ccms');
   OPM.moveSubmitButtons();
@@ -93,5 +107,8 @@ $(function () {
   }
   if ($('.radio-group-boolean').length) {
     OPM.buildGDSradios();
+  }
+  if ($('.help-title')) {
+    OPM.helpPrompt();
   }
 });
