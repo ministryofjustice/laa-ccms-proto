@@ -97,6 +97,12 @@ OPM.helpPrompt = function () {
   });
 }
 
+OPM.applyErrorClass = function () {
+  var anchor = $('.error'),
+    container = anchor.closest('.control-item');
+  container.addClass('error-container');
+}
+
 $(function () {
   $(document.documentElement).addClass('js-enabled laa-ccms');
   OPM.moveSubmitButtons();
@@ -111,5 +117,8 @@ $(function () {
   }
   if ($('.help-title')) {
     OPM.helpPrompt();
+  }
+  if($('.messages').children('.error').length) {
+    OPM.applyErrorClass();
   }
 });
