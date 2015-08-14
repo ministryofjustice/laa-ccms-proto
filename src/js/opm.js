@@ -13,13 +13,21 @@ OPM.moveNavItems = function () {
 };
 
 OPM.expandTextAreas = function () {
+  var max = 8000;
   $('textarea').each(function (i, el) {
     var textarea = $(el);
     textarea.keyup(function () {
       setTimeout(function () {
-        el.style.cssText = 'height:auto; padding:0';
+        el.style.cssText = 'height:auto;';
         el.style.cssText = 'height:' + el.scrollHeight + 'px';
       },0);
+    });
+    textarea.keydown(function () {
+      if (!('maxLength' in el)) {
+        if (el.value.length >= max) {
+          return false;
+        }
+      }
     });
   });
 };
