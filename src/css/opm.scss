@@ -10,6 +10,9 @@
 
 //*******************************************************************************
 // LAA styles
+.opm-progress-screens {
+  display: none;
+}
 body.owd-has-js {
   // font-family: 'GDS Transport Website';
   background: white;
@@ -148,7 +151,6 @@ body.owd-has-js {
   /* Screens */
   .opm-progress-screens {
     background-color: white;
-    display: block;
     li {
       font-size: 10px;
       border-bottom: 0;

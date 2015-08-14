@@ -9,6 +9,7 @@ OPM.styleHiddenContainers = function () {
 OPM.moveNavItems = function () {
   $('.opm-progress-screens')
   .appendTo('.active-stage');
+  $('.opm-progress-screens').show();
 };
 
 OPM.expandTextAreas = function () {
