@@ -178,6 +178,9 @@ body.owd-has-js {
     padding-bottom: $gutter*2;
   }
 
+  .owd-buttons-right{
+      text-align: left;
+  }
   .eig-odd{
     background-color: #fff;
   }
@@ -216,7 +219,7 @@ body.owd-has-js {
       font-weight:400;
     }
     &:before{
-      content: '▶ ';
+      content: '▶';
     }
     &.active:before{
       content: '▼ ';

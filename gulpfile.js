@@ -6,8 +6,10 @@ var postcss = require('gulp-postcss');
 var jade = require('gulp-jade');
 var concat = require('gulp-concat');
 var livereload = require('gulp-livereload');
+var sourcemaps = require('gulp-sourcemaps');
+var nano = require('gulp-cssnano');
+var uglify = require('gulp-uglify');
 var autoprefixer = require('autoprefixer');
-var lost = require('lost');
 var tinylr = require('tiny-lr');
 var express = require('express');
 var path = require('path');
@@ -17,22 +19,27 @@ var server = tinylr();
 // --- Basic Tasks ---
 gulp.task('css', function () {
   return gulp.src('src/css/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(
       sass({
         includePaths: ['src/css'],
         errLogToConsole: true
       }))
     .pipe(postcss([
-      lost(),
       autoprefixer()
     ]))
+    .pipe(nano())
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('public/css/'))
     .pipe(livereload(server));
 });
 
 gulp.task('js', function () {
   return gulp.src('src/js/*.js')
-    .pipe(concat('laa-ccms.min.js'))
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(concat('opm.min.js'))
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('public/js/'))
     .pipe(livereload(server));
 });
