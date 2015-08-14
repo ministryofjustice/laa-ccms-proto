@@ -198,7 +198,7 @@ body.owd-has-js {
   }
   .messages {
     border-left: 5px solid $error-colour;
-    padding: $gutter-half;
+    padding-left: $gutter-half;
     margin-left: $gutter;
     p.error {
       font-style: normal;

@@ -3,7 +3,7 @@
 var OPM = {};
 
 OPM.styleHiddenContainers = function () {
-  var containers = $('.opm-container:hidden').addClass('opm-reveal');
+  var containers = $('#content form').children('.opm-container:hidden').addClass('opm-reveal');
 };
 
 OPM.moveNavItems = function () {
