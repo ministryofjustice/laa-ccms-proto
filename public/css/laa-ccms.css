@@ -271,7 +271,7 @@ body.owd-has-js {
       font-weight: normal;
       padding-left: 10px; }
   .owd-has-js .opm-reveal > div {
-    border-left: 5px solid #bfc1c3;
+    border-left: 5px solid #dee0e2;
     margin-left: 30px; }
   .owd-has-js .active-screen {
     background: white;
@@ -319,7 +319,7 @@ body.owd-has-js {
     .owd-has-js .help-title.active:before {
       content: '▼ '; }
   .owd-has-js .help-content {
-    border-left: 5px solid #bfc1c3;
+    border-left: 5px solid #dee0e2;
     padding-left: 15px; }
   .owd-has-js .help-content-container {
     display: none;
